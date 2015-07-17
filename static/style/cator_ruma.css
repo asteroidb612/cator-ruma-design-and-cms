@@ -4,21 +4,24 @@ body {
     margin: 0;
 }
 
+#logo {
+    display: inline-block;
+    width: 10%;
+}
 .container {
-    background-image: url('../img/logo.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding-left: 20%;
     border-bottom: solid 1px #333;
 }
 
 header {
-    font-size: 3em;
+    display: inline-block;
     /* text-align: center; */
+}
+.company-name {
+    /* font-size: 3em; */
 }
 
 nav {
-    width: 70%;
+    width: 80%;
     /* margin: 0 auto; */
 }
 
@@ -29,6 +32,7 @@ ul {
 ul li {
     display: inline;
     text-align: center;
+    font-size: .5em;
 }
 
 a {
