@@ -1,12 +1,13 @@
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: kalinga, Helvetica, Arial, sans-serif;
     margin: 0;
 }
 
 #logo {
     display: inline-block;
+    vertical-align: top;
     line-height: 0px;
-    width: 17%;
+    width: 19%;
 }
 .container {
     padding: 0;
@@ -18,17 +19,23 @@ header {
     display: inline-block;
     width: 79%;
     vertical-align: top;
-    text-align: center;
-    margin-left: 1%;
+    margin-left: 2%;
+    padding-top: .4em;
 }
+
 .company-name {
-    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-family: kalinga; 
+    font-weight: bold;
 }
+
 .associates {
-    font-size: 1em;
+    vertical-align: middle;
+    font-size: .5em;
 }
 
 nav {
+    margin-top: -4px;
     /* margin: 0 auto; */
 }
 
@@ -53,7 +60,7 @@ a {
 }
 
 hr {
-    height: .20em;
+    height: .15em;
     width: 24%;
     margin: 0;
     background-color: rgb(242, 105, 34);
@@ -66,5 +73,29 @@ hr {
 .four:hover ~ hr  {margin-left: 75%;}
 
 .bar {
+    font-family: kalinga;
     color: rgb(242, 105, 34); 
 }
+
+@font-face {
+    font-family: franklin-gothic;
+    src: url('../fonts/frank_book.ttf');
+}
+
+@font-face {
+    font-family: franklin-gothic;
+    src: url('../fonts/frank_med.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: kalinga;
+    src: url('../fonts/kalinga.ttf');
+}
+
+@font-face {
+    font-gamily: kalinga;
+    src: url('../fonts/kalinga_med.ttf');
+    font-weight: bold;
+}
+
