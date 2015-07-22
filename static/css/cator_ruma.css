@@ -69,12 +69,18 @@ hr {
     background: rgba(100, 100, 100, .3);
 }
 
+.footer {
+    background: rgba(100, 100, 100, .3);
+    padding-top: 1em;
+}
+    
 .brag-image { 
     padding: 0;
 }
 
 .service {
     text-align: center;
+    padding-bottom: 1em;
 }
 address {
     padding-left: 1em;
