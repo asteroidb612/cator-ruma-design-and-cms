@@ -1,26 +1,52 @@
 <!DOCTYPE html> 
 <html>
   <head lang="en">
-      <title> Cator Ruma </title>
+    <title> Cator Ruma </title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="static/style/cator_ruma.css">
+
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="static/css/cator_ruma.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+
   </head>
   <body>
-    <div class="container">
-      <img id="logo" src="static/img/logo.png"><!--
+    <div class="header-container">
+      <img id="logo" src="static/img/logo.png" alt="Cator Ruma Logo"><!--
 	  --><header>
-        <span class="company-name">CATOR<span class="bar" > | </span>RUMA </span>
-        <span class="associates">&amp; ASSOCIATES, co.</span>
-	  <nav> <!-- This will have the bootstrap affix if we do that-->
-	    <ul><!--
+      	  <nav> <!-- This will have the bootstrap affix if we do that-->
+	        <ul><!--
 		  --><li class="one"> <a href="#"> What We Do </a></li><!--
 		  --><li class="two" > <a href="#"> Who We Are </a></li><!--
 		  --><li class="three"> <a href="#"> Work With Us </a></li><!--
 		  --><li class="four" > <a href="#"> Contact Us </a></li><!--
 		  --><hr>
-	    </ul>
-	  </nav>
-</header>
-	      </div>
+	        </ul>
+	      </nav>
+      </header>
+	</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <img id="union" class="img-responsive" src="static/img/union.jpg" alt="Union Station Project">
+        </div>
+        <div class="col-xs-12 col-md-4 brag" >
+          <h3> Union Station </h3>
+          <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+          <img class="img-responsive" src="static/img/theatre.jpg" alt="Theatre Project">
+        </div>
+        <div class="col-xs-12 col-md-4 brag" >
+          <h3>Disney World</h3>
+          <p>  Bacon ipsum dolor amet consectetur commodo et ham sunt jowl brisket, alcatra turducken rump ipsum quis proident. Porchetta sed pork belly, esse dolore cow velit est deserunt duis sint pork chop corned beef. Duis proident strip steak excepteur, ham hock commodo elit quis. Sirloin voluptate ribeye alcatra excepteur. Frankfurter corned beef porchetta, voluptate tongue kielbasa sausage est mollit. In sausage commodo sirloin ad nisi corned beef ea eiusmod. Reprehenderit short loin venison salami</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

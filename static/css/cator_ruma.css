@@ -1,0 +1,98 @@
+body {
+    font-family: kalinga, Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+#logo {
+    position: absolute;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: 0px;
+    width: 19%;
+}
+.header-container {
+    z-index: 10;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: inline-block;
+    width: 79%;
+    vertical-align: top;
+    margin-left: 21%; 
+    padding-top: .4em;
+}
+
+nav {
+    margin-top: -4px;
+    /* margin: 0 auto; */
+}
+
+ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    display: inline;
+    text-align: center;
+    font-size: .65em;
+}
+
+a {
+    display: inline-block;
+    width: 24%;
+    padding: .5em 0;
+    text-decoration: none;
+    color: #555;
+}
+
+hr {
+    height: .15em;
+    width: 24%;
+    margin: 0;
+    background-color: rgb(242, 105, 34);
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+.two:hover ~ hr   {margin-left: 25%;}
+.three:hover ~ hr {margin-left: 50%;}
+.four:hover ~ hr  {margin-left: 75%;}
+
+.brag {
+    background: rgba(100, 100, 100, .3);
+}
+
+/* #union { */
+/*     min-width: 100%; */
+/*     max-width: 100%; */
+/* } */
+
+@font-face {
+    font-family: franklin-gothic;
+    src: url('../fonts/frank_book.ttf');
+}
+
+@font-face {
+    font-family: franklin-gothic;
+    src: url('../fonts/frank_med.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: kalinga;
+    src: url('../fonts/kalinga.ttf');
+}
+
+@font-face {
+    font-gamily: kalinga;
+    src: url('../fonts/kalinga_med.ttf');
+    font-weight: bold;
+}
+
