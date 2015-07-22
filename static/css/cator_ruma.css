@@ -69,11 +69,31 @@ hr {
     background: rgba(100, 100, 100, .3);
 }
 
+.brag-image { 
+    padding: 0;
+}
+
+.service {
+    text-align: center;
+}
+address {
+    padding-left: 1em;
+    font-size: .6em;
+}
+
 /* #union { */
 /*     min-width: 100%; */
 /*     max-width: 100%; */
 /* } */
 
+.gly-rotate-90 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
 @font-face {
     font-family: franklin-gothic;
     src: url('../fonts/frank_book.ttf');
