@@ -70,6 +70,7 @@ hr {
 }
 
 .footer {
+    text-align: center;
     background: rgba(100, 100, 100, .3);
     padding-top: 1em;
 }
@@ -120,5 +121,3 @@ address {
     font-gamily: kalinga;
     src: url('../fonts/kalinga_med.ttf');
     font-weight: bold;
-}
-
