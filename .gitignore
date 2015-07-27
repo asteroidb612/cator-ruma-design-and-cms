@@ -1,3 +1,5 @@
 .DS_Store
 /static/css/cator_ruma.css~
 /static/img/jpg/
+*~
+demo.py

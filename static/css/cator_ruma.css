@@ -85,14 +85,8 @@ hr {
     padding-bottom: 1em;
 }
 address {
-    padding-left: 1em;
-    font-size: .6em;
+    font-size: .5em;
 }
-
-/* #union { */
-/*     min-width: 100%; */
-/*     max-width: 100%; */
-/* } */
 
 .gly-rotate-90 {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
@@ -125,5 +119,5 @@ address {
 }
 
 video {
-    margin-top:2.3em;
+    margin-top:1.8em;
 }
