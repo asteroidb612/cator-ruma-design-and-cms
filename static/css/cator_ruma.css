@@ -11,8 +11,8 @@ body {
     width: 19%;
 }
 .header-container {
-    z-index: 10;
     position: fixed;
+    z-index: 10;
     background-color: white;
     width: 100%;
     padding: 0;
@@ -61,6 +61,7 @@ hr {
     transition: .3s ease-in-out;
 }
 
+.one:hover ~ hr {margin-left: 0%;}
 .two:hover ~ hr   {margin-left: 25%;}
 .three:hover ~ hr {margin-left: 50%;}
 .four:hover ~ hr  {margin-left: 75%;}
@@ -121,3 +122,8 @@ address {
     font-gamily: kalinga;
     src: url('../fonts/kalinga_med.ttf');
     font-weight: bold;
+}
+
+video {
+    margin-top:2.3em;
+}
