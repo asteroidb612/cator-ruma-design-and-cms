@@ -88,6 +88,22 @@ address {
     font-size: .5em;
 }
 
+
+video {
+    margin-top:1.8em;
+}
+
+.job-shortcut {
+    background-color: rgb(242, 105, 34);
+    text-align: center;
+}
+.job-shortcut > a, a:hover{
+    color: white;
+    height: 2em;
+    text-decoration: none;
+    width: 18em;
+}
+
 .gly-rotate-90 {
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
     -webkit-transform: rotate(90deg);
@@ -96,6 +112,15 @@ address {
     -o-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+
+.perks {
+    margin-top: 1em;
+}
+
+.perk {
+    font-size: 2em;
+}
+
 @font-face {
     font-family: franklin-gothic;
     src: url('../fonts/frank_book.ttf');
@@ -116,8 +141,4 @@ address {
     font-gamily: kalinga;
     src: url('../fonts/kalinga_med.ttf');
     font-weight: bold;
-}
-
-video {
-    margin-top:1.8em;
 }
