@@ -85,6 +85,7 @@ hr {
     text-align: center;
     padding-bottom: 1em;
 }
+
 address {
     font-size: .5em;
 }
@@ -98,7 +99,7 @@ video {
     background-color: rgb(242, 105, 34);
     text-align: center;
 }
-.job-shortcut > a, a:hover{
+.job-shortcut > a, .job-shortcut > a:hover{
     color: white;
     height: 2em;
     text-decoration: none;
