@@ -11,8 +11,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="static/js/bootstrap.js"></script>
-    <script src="static/js/cator_ruma.js"></script>
     <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="static/js/cator_ruma.js"></script>
  </head>
   <body>
     <div class="header-container">
@@ -22,8 +22,8 @@
 	        <ul><!--
 		  --><li class="one"> <a href="index.html"> What We Do </a></li><!--
 		  --><li class="two" > <a href="about.html"> Who We Are </a></li><!--
-		  --><li class="three"> <a href="careers.html"> Work With Us </a></li><!--
-		  --><li class="four" > <a > Contact Us </a></li><!--
+		  --><li class="three"> <a href="careers.html" > Work With Us </a></li><!--
+		  --><li class="four" onclick="$.scrollTo('max', 600)"> <a href="#" > Contact Us </a></li><!--
 		  --><hr>
 	        </ul>
 	      </nav>
@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-12 job-shortcut">
+        <div class="col-xs-12 job-shortcut job" onclick="$.scrollTo('max', 600)">
             <a> See Open Positions </a>
         </div>
     </div>
@@ -73,7 +73,7 @@
     </div>
     <div class="row">
         <div class="col-xs-6 service">
-            <span class="glyphicon glyphicon-tasks perk""></span><br>
+            <span class="glyphicon glyphicon-tasks perk"></span><br>
             Hands-On Engineering
         </div>
         <div class="col-xs-6 service" >
@@ -107,123 +107,137 @@
             Commitment to Physical and Mental Fitness
         </div>
     </div>
-<div class="row" >
-    <div class="col-xs-12 job" >
-        <h4 data-toggle="modal" data-target="#commissioning-technician"> Commissioning Technician</h4>
+    <div class="row">
+        <div class="col-xs-12 job" >
+            <h4 data-toggle="modal" data-target="#commissioning-technician"> Commissioning Technician</h4>
 
-        <!-- Modal -->
-        <div class="modal fade" id="commissioning-technician" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                        <h4 class="modal-title" id="myModalLabel"> Commissioning Technician</h4>
-                    </div>
-                    <div class="modal-body">
-                        Cator, Ruma &amp; Associates is seeking a full time employee  to lead, support and execute building commissioning. This position  demands an experienced self-starter capable of successfully commissioning  mechanical, electrical and plumbing systems for commercial and institutional  facilities. These shall include K-12 , higher education,  healthcare, laboratory, and commercial/Industrial buildings with an emphasis on  other energy intensive markets. <br>
-                        <br>
-                        Typical duties include but will not be limited to:
-                        <ul>
-                            <li>Perform all aspects of the commissioning of  mechanical, electrical and control systems for commercial and institutional  buildings.</li>
-                            <li>Perform commissioning design reviews and  comment.</li>
-                            <li>Review submittal documents.</li>
-                            <li>Prepare pre-functional and functional forms,  review forms after completion.</li>
-                            <li>Develop commissioning requirements/plans  including commissioning project specifications.</li>
-                            <li>Develop and/or review systems manuals.</li>
-                            <li>Assist with writing and assembly of  commissioning reports.</li>
-                            <li>Take an active role in business development and  expansion.</li>
-                            <li>Maintain strong client relationships.</li>
-                            <li>Other responsibilities as defined by the Client.</li>
-                        </ul>
-                        Education and experience:
-                        <ul>
-                            <li>Graduate Engineer or similar field.&nbsp;  Appropriate work experience may be considered as a substitute. </li>
-                            <li>Knowledge of ASHRAE commissioning industry  standards.&nbsp; Commissioning certification, such as from the Building  Commissioning Associates, or similar is preferred but not required. Successful  candidate must be prepared to take the exam (if not current at the time  interview) within 6 months of start date.</li>
-                            <li>Knowledge of the International Codes, National  Electrical Code and various industry standards, such as OSHA and NFPA.</li>
-                            <li>Valid Driver’s License with clean driving  record.</li>
-                            <li>Background check will be required.</li>
-                        </ul></td>
+            <!-- Modal -->
+            <div class="modal " id="commissioning-technician" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                            <h4 class="modal-title" id="myModalLabel"> Commissioning Technician</h4>
+                        </div>
+                        <div class="modal-body">
+                            Cator, Ruma &amp; Associates is seeking a full time employee  to lead, support and execute building commissioning. This position  demands an experienced self-starter capable of successfully commissioning  mechanical, electrical and plumbing systems for commercial and institutional  facilities. These shall include K-12 , higher education,  healthcare, laboratory, and commercial/Industrial buildings with an emphasis on  other energy intensive markets. <br>
+                            <br>
+                            Typical duties include but will not be limited to:
+                            <ul>
+                                <li>Perform all aspects of the commissioning of  mechanical, electrical and control systems for commercial and institutional  buildings.</li>
+                                <li>Perform commissioning design reviews and  comment.</li>
+                                <li>Review submittal documents.</li>
+                                <li>Prepare pre-functional and functional forms,  review forms after completion.</li>
+                                <li>Develop commissioning requirements/plans  including commissioning project specifications.</li>
+                                <li>Develop and/or review systems manuals.</li>
+                                <li>Assist with writing and assembly of  commissioning reports.</li>
+                                <li>Take an active role in business development and  expansion.</li>
+                                <li>Maintain strong client relationships.</li>
+                                <li>Other responsibilities as defined by the Client.</li>
+                            </ul>
+                            Education and experience:
+                            <ul>
+                                <li>Graduate Engineer or similar field.&nbsp;  Appropriate work experience may be considered as a substitute. </li>
+                                <li>Knowledge of ASHRAE commissioning industry  standards.&nbsp; Commissioning certification, such as from the Building  Commissioning Associates, or similar is preferred but not required. Successful  candidate must be prepared to take the exam (if not current at the time  interview) within 6 months of start date.</li>
+                                <li>Knowledge of the International Codes, National  Electrical Code and various industry standards, such as OSHA and NFPA.</li>
+                                <li>Valid Driver’s License with clean driving  record.</li>
+                                <li>Background check will be required.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row" >
-    <div class="col-xs-12 job" >
-        <h4 data-toggle="modal" data-target="#electrical-engineer"> Electrical Engineer</h4>
+    <div class="row">
+        <div class="col-xs-12 job" >
+            <h4 data-toggle="modal" data-target="#electrical-engineer"> Electrical Engineer</h4>
 
-        <!-- Modal -->
-        <div class="modal fade" id="electrical-engineer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                        <h4 class="modal-title" id="myModalLabel"> Electrical Engineer</h4>
-                    </div>
-                    <div class="modal-body">
-                        Cator, Ruma & Associates is seeking a skilled Electrical Engineer with a minimum of 3 years of experience.  This is a career opportunity for a person who has previous experience in the building consulting engineering business as a project designer, engineer, or project manager. References which support past experiences will be mandatory.
+            <!-- Modal -->
+            <div class="modal " id="electrical-engineer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                            <h4 class="modal-title" id="myModalLabel"> Electrical Engineer</h4>
+                        </div>
+                        <div class="modal-body">
+                            Cator, Ruma & Associates is seeking a skilled Electrical Engineer with a minimum of 3 years of experience.  This is a career opportunity for a person who has previous experience in the building consulting engineering business as a project designer, engineer, or project manager. References which support past experiences will be mandatory.
 
-                        We need a conscientious, responsible individual who is well versed in electrical power, lighting, fire alarm, communications and building systems design for institutional and commercial buildings. The optimal candidate will have knowledge in operating Revit (min 1 yr. experience) and AutoCAD (min 3 yrs. experience) to draft and design Electrical Systems. Good written and verbal communication skills are essential for the position.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row" >
-    <div class="col-xs-12 job" >
-        <h4 data-toggle="modal" data-target="#mechanical-engineer"> Mechanical Engineer</h4>
-
-        <!-- Modal -->
-        <div class="modal fade" id="mechanical-engineer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
-                        <h4 class="modal-title" id="myModalLabel"> Mechanical Engineer</h4>
-                    </div>
-                    <div class="modal-body">
-                        Cator, Ruma & Associates is seeking a skilled Mechanical Engineer with a minimum of 3 years of experience.  This is a career opportunity for a person who has previous experience in the building consulting engineering business as a project designer, engineer, or project manager.  References which support past experiences will be mandatory.  
-
-                        Experience with Green HVAC and electrical systems a plus. The optimal candidate will have knowledge in operating Revit (min 1 yr. experience) and AutoCAD (min 3 yrs. experience) to draft and design Mechanical Systems. Good written and verbal communication skills are essential for the position.
+                            We need a conscientious, responsible individual who is well versed in electrical power, lighting, fire alarm, communications and building systems design for institutional and commercial buildings. The optimal candidate will have knowledge in operating Revit (min 1 yr. experience) and AutoCAD (min 3 yrs. experience) to draft and design Electrical Systems. Good written and verbal communication skills are essential for the position.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-    <div class="row footer">
-      <div class="col-xs-4">
+    <div class="row">
+        <div class="col-xs-12 job" >
+            <h4 data-toggle="modal" data-target="#mechanical-engineer"> Mechanical Engineer</h4>
+
+            <!-- Modal -->
+            <div class="modal " id="mechanical-engineer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></a>
+                            <h4 class="modal-title" id="myModalLabel"> Mechanical Engineer</h4>
+                        </div>
+                        <div class="modal-body">
+                            Cator, Ruma &amp; Associates is seeking a skilled Mechanical Engineer with a minimum of 3 years of experience.  This is a career opportunity for a person who has previous experience in the building consulting engineering business as a project designer, engineer, or project manager.  References which support past experiences will be mandatory.
+
+                            Experience with Green HVAC and electrical systems a plus. The optimal candidate will have knowledge in operating Revit (min 1 yr. experience) and AutoCAD (min 3 yrs. experience) to draft and design Mechanical Systems. Good written and verbal communication skills are essential for the position.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 submit" >
+            Submit all application forms to Ayla Berger<br>
+            Email: <a href="mailto:aberger@catorruma.com"> aberger@catorruma.com </a><br>
+            Fax: (303) 202-6303
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" >
+            <a class="apply" href="static/img/cra_application.pdf">
+                Application
+            </a>
+        </div>
+    </div>
+      <div class="row footer">
+    <div class="col-xs-4">
         <span class="state"> Colorado: </span> <br>
         <address>
-          96 Tabor Street <br>
-          Lakewood, CO 80401 <br>
-          (303) 232-6200
+            96 Tabor Street <br>
+            Lakewood, CO 80401 <br>
+            (303) 232-6200
         </address>
-      </div>
-      <div class="col-xs-4">
+    </div>
+    <div class="col-xs-4">
         <span class="state"> Wyoming: </span><br>
         <address>
-          420 W. Lincoln Way <br>
-          Cheyenne, WY 82001 <br>
-          (307) 274-3830
+            420 W. Lincoln Way <br>
+            Cheyenne, WY 82001 <br>
+            (307) 274-3830
         </address>
-      </div>
-      <div class="col-xs-4">
+    </div>
+    <div class="col-xs-4">
         <span class="state"> Oklahoma: </span><br>
         <address>
-          2101 NW 28th Street <br>
-          Oklahoma City, OK 73107 <br>
-          (405) 429-4060
+            2101 NW 28th Street <br>
+            Oklahoma City, OK 73107 <br>
+            (405) 429-4060
         </address>
-      </div>
-     </div>
-
-    <div class="row footer">
-      <div class="col-xs-12">
-        © 2013 Cator, Ruma & Associates, Co.
-      </div>
+    </div>
+</div>
+      <div class="row footer">
+    <div class="col-xs-12">
+        © 2013 Cator, Ruma &amp; Associates, Co.
+    </div>
+</div>
     </div>
   </body>
 </html>

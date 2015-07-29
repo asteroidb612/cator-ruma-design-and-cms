@@ -72,11 +72,11 @@ hr {
 }
 
 .footer {
-    text-align: center;
+    text-align: left;
     background: rgba(100, 100, 100, .3);
     padding-top: 1em;
 }
-    
+
 .brag-image { 
     padding: 0;
 }
@@ -98,62 +98,85 @@ video {
 .job-shortcut {
     background-color: rgb(242, 105, 34);
     text-align: center;
+    font-size: 1.3em;
 }
-.job-shortcut > a, .job-shortcut > a:hover{
-    color: white;
-    height: 2em;
-    text-decoration: none;
-    width: 18em;
-}
-
-.gly-rotate-90 {
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
+.job-shortcut > a {
+color: white;
+height: 2em;
+text-decoration: none;
+width: 18em;
 }
 
-.perks {
-    margin-top: 1em;
-}
+ .gly-rotate-90 {
+     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+     -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+     -ms-transform: rotate(90deg);
+     -o-transform: rotate(90deg);
+     transform: rotate(90deg);
+ }
 
-.perk {
-    font-size: 2em;
-}
+ .perks {
+     margin-top: 1em;
+ }
 
-@font-face {
-    font-family: franklin-gothic;
-    src: url('../fonts/frank_book.ttf');
-}
+ .perk {
+     font-size: 2em;
+ }
 
-@font-face {
-    font-family: franklin-gothic;
-    src: url('../fonts/frank_med.ttf');
-    font-weight: bold;
-}
+ @font-face {
+     font-family: franklin-gothic;
+     src: url('../fonts/frank_book.ttf');
+ }
 
-@font-face {
-    font-family: kalinga;
-    src: url('../fonts/kalinga.ttf');
-}
+ @font-face {
+     font-family: franklin-gothic;
+     src: url('../fonts/frank_med.ttf');
+     font-weight: bold;
+ }
 
-@font-face {
-    font-gamily: kalinga;
-    src: url('../fonts/kalinga_med.ttf');
-    font-weight: bold;
-}
+ @font-face {
+     font-family: kalinga;
+     src: url('../fonts/kalinga.ttf');
+ }
 
-.job ul li{
-    display: list-item;
-}
+ @font-face {
+     font-gamily: kalinga;
+     src: url('../fonts/kalinga_med.ttf');
+     font-weight: bold;
+ }
 
-.job {
-    background-color: rgb(242, 105, 34);
-    border-bottom: 1px solid white;
-}
+ .job ul li{
+     display: list-item;
+ }
+
+ .job {
+     background-color: rgb(242, 105, 34);
+     border-right: 1px solid #ccc;
+     border-bottom: 1px solid #ccc;
+     border-left: 1px solid #ccc;
+     /* So Get this. mobile safari doesn't support clicking on divs? But we can use this instead to make it work? */
+     cursor: pointer;
+ }
 
 .job > h4 {
     color: white;
+}
+
+.submit {
+    padding: 1em;
+    font-weight: 1.1em;
+}
+
+.apply, .apply:hover, .apply:active, .apply:visited{
+    display: block;
+    border: 4px solid rgb(242, 105, 34);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.7em;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    margin-bottom: 1em;
 }
