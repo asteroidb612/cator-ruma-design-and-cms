@@ -17,6 +17,7 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
+    border-bottom: 1px solid #eee;
 }
 
 header {
@@ -141,4 +142,17 @@ video {
     font-gamily: kalinga;
     src: url('../fonts/kalinga_med.ttf');
     font-weight: bold;
+}
+
+.job ul li{
+    display: list-item;
+}
+
+.job {
+    background-color: rgb(242, 105, 34);
+    border-bottom: 1px solid white;
+}
+
+.job > h4 {
+    color: white;
 }
