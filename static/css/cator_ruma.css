@@ -1,4 +1,19 @@
+@media(min-width: 400px) {
+    li > a {
+        height: 3em;
+        font-size: 1.3em; 
+        vertical-align: middle;
+        padding: 1em 0;
+    }
+}
+
+@media(max-width: 399px) {
+    address {
+        font-size: .7em;
+    }
+}
 body {
+    padding-top: 26px;
     font-family: kalinga, Helvetica, Arial, sans-serif;
     margin: 0;
 }
@@ -16,8 +31,7 @@ body {
     background-color: white;
     width: 100%;
     padding: 0;
-    margin: 0;
-    border-bottom: 1px solid #eee;
+    margin: -26px 0 0 0; // Adjust
 }
 
 header {
@@ -45,11 +59,15 @@ ul li {
     font-size: .65em;
 }
 
-a {
+
+li > a {
     display: inline-block;
     width: 24%;
-    padding: .5em 0;
     text-decoration: none;
+    color: #555;
+    height: 2em; //Adjust 
+}
+address > a {
     color: #555;
 }
 
@@ -58,8 +76,9 @@ hr {
     background-color: rgb(242, 105, 34);
     border: none;
 }
+
 .nav-underline {
-    margin: 0;
+    margin: -3px 0 3px 0;
     width: 24%;
     transition: .3s ease-in-out;
 }
@@ -87,15 +106,6 @@ hr {
     text-align: center;
     padding-bottom: 1em;
     padding-top: 1em;
-}
-
-address {
-    font-size: .5em;
-}
-
-
-video {
-    margin-top:1.8em;
 }
 
 .job-shortcut {
@@ -171,15 +181,21 @@ video {
     font-weight: 1.1em;
 }
 
-.apply, .apply:hover, .apply:active, .apply:visited{
-                                         display: block;
-                                         border: 4px solid rgb(242, 105, 34);
-                                         width: 100%;
-                                         height: 100%;
-                                         text-align: center;
-                                         text-decoration: none;
-                                         font-size: 1.7em;
-                                         color: rgb(85, 85, 85);
-                                         text-decoration: none;
-                                         margin-bottom: 1em;
-                                     }
+.apply, 
+.apply:hover, 
+.apply:active, 
+.apply:visited{
+    display: block;
+    border: 4px solid rgb(242, 105, 34);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.7em;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.contact {
+    padding: 0 5px;
+}
