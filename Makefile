@@ -9,9 +9,6 @@ templates/about.html: s/about.s.html s/header.s.html s/footer.s.html
 templates/careers.html: s/careers.s.html s/header.s.html s/footer.s.html
 	cat s/header.s.html s/careers.s.html s/footer.s.html > templates/careers.html
 
-s/careers.s.html: s/perks.s.html s/jobs.s.html 
-	cat s/perks.s.html s/jobs.s.html > s/careers.s.html
-
 clean: templates/about.html templates/index.html templates/careers.html
 	rm templates/about.html templates/index.html templates/careers.html
 

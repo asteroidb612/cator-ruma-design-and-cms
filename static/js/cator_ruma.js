@@ -4,6 +4,8 @@ $(document).ready(function () {
 
 document.addEventListener("touchmove", resize, false);
 document.addEventListener("scroll", resize, false);
+document.addEventListener("resize", resize, false);
+
 function resize() {
     var h = $('.header-container').height();
     var total_width = $('.header-container').width();
