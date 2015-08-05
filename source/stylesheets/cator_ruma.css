@@ -25,7 +25,6 @@
     }
 }
 
-
 @media(min-width: 22em) and (max-width: 30em) {
     .brag-info-mobile {
         background: rgba(100, 100, 100, .3);
