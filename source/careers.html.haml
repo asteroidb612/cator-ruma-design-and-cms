@@ -1,0 +1,70 @@
+:css
+  hr.nav-underline {margin-left: 50%;}
+.container-fluid
+  .row
+    .col-xs-12.brag-image
+      %img#hats.img-responsive{:src => "images/hats.web.jpg"}
+  .row
+    .col-xs-12.job-shortcut{:onclick => "$.scrollTo('max', 600)"}
+      %a See Open Positions
+  .row.perks
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-star.perk
+      %br
+        High Performance Company
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-stats.perk
+      %br
+        Competitive Salary/Bonus
+  .row
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-user.perk
+      %br
+        Paid Benefits
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-piggy-bank.perk
+      %br
+        401(k) Plan
+  .row
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-pencil.perk
+      %br
+        Commitment to Continuing Education
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-signal.perk
+      %br
+        Unlimited Advancement Potential
+  .row
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-tasks.perk
+      %br
+        Hands-On Engineering
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-th.perk
+      %br
+        Wide Variety of Projects
+  .row
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-globe.perk
+      %br
+        Business Travel Opportunities
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-link.perk
+      %br
+        Memberships/ Registrations
+  .row
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-hourglass.perk
+      %br
+        Convenient Hours
+    .col-xs-6.service
+      %span.glyphicon.glyphicon-signal.perk
+      %br
+        Employee Incentive Programs
+  .row
+    .col-xs-6.col-xs-offset-3.service
+      %span.glyphicon.glyphicon-grain.perk
+      %br
+        Commitment to Physical and Mental Fitness
+  %hr/
+  = partial :jobs

@@ -1,0 +1,64 @@
+.container-fluid
+  .row
+    .col-xs-12.brag-image
+      .brag-info-desktop.right
+        %h3 Union Station
+        %p Beloved Denver Station’s transformation into the Crawford Hotel and iconic hot spot has changed the face of LoDo. Winner of the 2014 American Council of Engineering Companies (ACEC) Excellence Award.
+      %img#union.img-responsive{:src => "images/union.web.jpg"}/
+    .col-xs-12.brag-info-mobile
+      %h3 Union Station
+      %p Beloved Denver Station’s transformation into the Crawford Hotel and iconic hot spot has changed the face of LoDo. Winner of the 2014 American Council of Engineering Companies (ACEC) Excellence Award.
+  / Services Grid
+  .row
+    .col-xs-1.service
+      %span.glyphicon.glyphicon-fire.perk
+      %br/
+      Fire Detection
+      %span.glyphicon.glyphicon-tint.perk
+      %br/
+      Fire Prevention
+      %span.glyphicon.glyphicon-retweet.perk
+      %br/
+      HVAC
+      %span.glyphicon.glyphicon-flash.perk
+      %br/
+      Power
+      %span.glyphicon.glyphicon-wrench.perk
+      %br/
+      Plumbing
+      %span.glyphicon.glyphicon-volume-up.gly-rotate-90.perk
+      %br/
+      Lighting
+      %span.glyphicon.glyphicon-scale.perk
+      %br/
+      Low Voltage
+      %span.glyphicon.glyphicon-duplicate.perk
+      %br/
+      Commissioning
+    .col-xs-11
+    / Projects Carousel
+  .row
+    #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+      / Indicators
+      %ol.carousel-indicators
+        %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+        %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+        %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+        %li{"data-slide-to" => "3", "data-target" => "#carousel-example-generic"}
+      / Wrapper for slides
+      .carousel-inner{:role => "listbox"}
+        .item.active
+          %img{:src => "images/hospital.web.car.jpg"}/
+        .item
+          %img{:src => "images/com.web.car.jpg"}/
+        .item
+          %img{:src => "images/theatre.web.car.jpg"}/
+        .item
+          %img{:src => "images/hogwarts.web.car.jpg"}/
+      / Controls
+      %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+        %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+        %span.sr-only Previous
+      %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+        %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+        %span.sr-only Next
