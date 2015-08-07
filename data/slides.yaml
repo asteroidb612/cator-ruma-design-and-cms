@@ -1,0 +1,16 @@
+images: 
+  - hospital.web.car.jpg
+  - com.web.car.jpg
+  - theatre.web.car.jpg
+  - hogwarts.web.car.jpg
+
+sectors:
+  - Corrections
+  - Government
+  - Healthcare
+  - Higher Education
+  - Hospitality
+  - K - 12
+  - Laboratory
+  - Office
+  - Religious

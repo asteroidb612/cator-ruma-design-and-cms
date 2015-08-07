@@ -9,56 +9,117 @@
       %h3 Union Station
       %p Beloved Denver Station’s transformation into the Crawford Hotel and iconic hot spot has changed the face of LoDo. Winner of the 2014 American Council of Engineering Companies (ACEC) Excellence Award.
   / Services Grid
+  %h1 Services
+  %hr/
   .row
-    .col-xs-1.service
+    .col-xs-6.service.visible-xs
       %span.glyphicon.glyphicon-fire.perk
       %br/
       Fire Detection
+      %br/
       %span.glyphicon.glyphicon-tint.perk
       %br/
       Fire Prevention
+      %br/
       %span.glyphicon.glyphicon-retweet.perk
       %br/
       HVAC
+      %br/
       %span.glyphicon.glyphicon-flash.perk
       %br/
       Power
+      %br/
+    .col-xs-6.service.visible-xs
       %span.glyphicon.glyphicon-wrench.perk
       %br/
       Plumbing
-      %span.glyphicon.glyphicon-volume-up.gly-rotate-90.perk
       %br/
-      Lighting
       %span.glyphicon.glyphicon-scale.perk
       %br/
       Low Voltage
+      %br/
       %span.glyphicon.glyphicon-duplicate.perk
       %br/
       Commissioning
-    .col-xs-11
+      %br/
+      %span.glyphicon.glyphicon-volume-up.gly-rotate-90.perk
+      %br/
+      Lighting
+      %br/
+    .col-xs-6.service.col-sm-2.hidden-xs
+      %span.glyphicon.glyphicon-fire.perk
+      %br/
+      Fire Detection
+      %br/
+      %span.glyphicon.glyphicon-tint.perk
+      %br/
+      Fire Prevention
+      %br/
+      %span.glyphicon.glyphicon-retweet.perk
+      %br/
+      HVAC
+      %br/
+      %span.glyphicon.glyphicon-flash.perk
+      %br/
+      Power
+      %br/
+      %span.glyphicon.glyphicon-wrench.perk
+      %br/
+      Plumbing
+      %br/
+      %span.glyphicon.glyphicon-scale.perk
+      %br/
+      Low Voltage
+      %br/
+      %span.glyphicon.glyphicon-duplicate.perk
+      %br/
+      Commissioning
+      %br/
+      %span.glyphicon.glyphicon-volume-up.gly-rotate-90.perk
+      %br/
+      Lighting
+      %br/
+    .sectors.col-xs-12.visible-xs
+      %hr/
+      - data.slides.sectors.each do |s|
+        .sector
+          %img{:src => lorem.image('100x100')}
+          %span #{s}
+
+    .sectors.col-sm-5.hidden-xs
+      - 5.times.each do |s|
+        .sector
+          %img{:src => lorem.image('100x100')}
+          %span #{data.slides.sectors[s]}
+    .sectors.col-sm-5.hidden-xs
+      - 5.times.each do |s|
+        - sec = data.slides.sectors[5+s]
+        - if sec
+          .sector
+            %img{:src => lorem.image('100x100')}
+            %span #{sec}
+
+
     / Projects Carousel
-  .row
-    #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
-      / Indicators
-      %ol.carousel-indicators
-        %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
-        %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
-        %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
-        %li{"data-slide-to" => "3", "data-target" => "#carousel-example-generic"}
-      / Wrapper for slides
-      .carousel-inner{:role => "listbox"}
-        .item.active
-          %img{:src => "images/hospital.web.car.jpg"}/
-        .item
-          %img{:src => "images/com.web.car.jpg"}/
-        .item
-          %img{:src => "images/theatre.web.car.jpg"}/
-        .item
-          %img{:src => "images/hogwarts.web.car.jpg"}/
-      / Controls
-      %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
-        %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
-        %span.sr-only Previous
-      %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
-        %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
-        %span.sr-only Next
+/  .row
+/    #carousel-example-generic.carousel.slide{"data-ride" => "carousel"}
+/      / Indicators
+/      %ol.carousel-indicators
+/        %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+/        %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+/        %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+/        %li{"data-slide-to" => "3", "data-target" => "#carousel-example-generic"}
+/      / Wrapper for slides
+/      .carousel-inner{:role => "listbox"}
+/        .item.active
+/          %img{:src => "images/hospital.web.car.jpg"}/
+/        - data.slides.images.each do |i|
+/          .item
+/            %img{:src => "images/#{i}"}
+/      / Controls
+/      %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+/        %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+/        %span.sr-only Previous
+/      %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+/        %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+/        %span.sr-only Next

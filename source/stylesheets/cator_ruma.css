@@ -98,11 +98,19 @@
     .service {
         font-size: 1.2em;
     }
+    .perk-col {
+        font-size: 1.2em;
+    }
     .portrait {
         padding: 2em;
     }
     .apply {
         margin: 2em;
+    }
+}
+@media (min-width: 60em){
+    .service {
+        border-right: 2px solid rgb(242, 105, 34);
     }
 }
 
@@ -226,6 +234,11 @@ hr {
 
 .perk {
     font-size: 2em;
+    padding-top: .5em;
+}
+.perk-col {
+    text-align: center;
+    padding: 1em 0;
 }
 
 @font-face {
@@ -297,7 +310,6 @@ hr {
     /* padding: 0 2em; */
 }
 
-
 .application-contact {
     padding-left: 2em;
 }
@@ -308,4 +320,23 @@ hr {
 } 
 .info {
     margin: .3em 0;
+}
+
+.sector {
+    padding: .3em;
+}
+.sector span {
+    display: inline-block;
+    padding:.5em;
+    font-size: 1.8em;
+}
+
+.sector img {
+    display: inline-block;
+    height: 7em;
+    width: 7em;
+}
+
+.sectors{
+    padding-bottom: 1em;
 }
