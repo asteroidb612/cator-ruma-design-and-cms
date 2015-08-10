@@ -5,8 +5,10 @@
     .col-xs-12.brag-image
       %img#hats.img-responsive{:src => "images/hats.web.jpg"}
   .row
-    .col-xs-12.job-shortcut{:onclick => "$.scrollTo('max', 600)"}
-      %a See Open Positions
+    .col-xs-12.job-shortcut{:onclick => "$.scrollTo('#open-positions', 600)"}
+      %a
+        %span.glyphicon.glyphicon-search
+        &nbsp;See Open Positions
   .row.perks
     .col-xs-6.perk-col
       %span.glyphicon.glyphicon-star.perk

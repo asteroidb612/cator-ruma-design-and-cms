@@ -1,122 +1,8 @@
-@media(max-width: 22em) {
-    li > a {
-        line-height: 2;
-    }
-    address {
-        font-size: .7em;
-    }
-    body {
-        padding-top: 26px;
-    }
-    .header-container {
-        margin: -26px 0 0 0;
-    }
-
-    .brag-info-mobile {
-        background: rgba(100, 100, 100, .3);
-    }
-
-    .brag-info-desktop {
-        display: none;
-    }
-
-    .brag-image { 
-        padding: 0;
-    }
-}
-
-
-@media(min-width: 22em) and (max-width: 30em) {
-    .brag-info-mobile {
-        background: rgba(100, 100, 100, .3);
-    }
-
-    .brag-info-desktop {
-        display: none;
-    }
-
-    .brag-image { 
-        padding: 0;
-    }
-    li > a {
-        line-height: 3;
-    }
-    .header-container {
-        margin: -30px 0 0 0; // Adjust
-    }
-    body {
-        padding-top: 30px;
-    }
-    .states {
-        font-size: 1.2em;
-    }
-    ul li {
-        font-size: 1em;
-    }
-}
-
-@media(min-width: 30em)  {
-    .brag-info-mobile {
-        display: none;
-    }
-
-    .brag-info-desktop {
-        position: absolute;
-        width: 30%;
-        background: rgba(130, 130, 130, .7);
-        padding: 3% 1em 1em 1em ;
-        height: 100%; 
-        color: white;
-    }
-    
-    .right{
-        right: 0;
-    }
-
-    .brag-image { 
-        position: relative;
-        left: 1px;
-        padding: 0;
-    }
-
-    li > a {
-        line-height: 4;
-        font-size: 1.5
-    }
-    nav > ul {
-        font-size: 1.4em;
-    }
-    .header-container {
-        margin: -56px 0 0 0; // Adjust
-    }
-    body {
-        padding-top: 56px;
-    }
-    .states {
-        font-size: 1.2em;
-    }
-    .service {
-        font-size: 1.2em;
-    }
-    .perk-col {
-        font-size: 1.2em;
-    }
-    .portrait {
-        padding: 2em;
-    }
-    .apply {
-        margin: 2em;
-    }
-}
-@media (min-width: 60em){
-    .service {
-        border-right: 2px solid rgb(242, 105, 34);
-    }
-}
-
 body {
     font-family: kalinga, Helvetica, Arial, sans-serif;
     margin: 0;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 #logo {
@@ -127,6 +13,7 @@ body {
     height: auto;
 }
 .header-container {
+    left: 0;
     position: fixed;
     z-index: 10;
     background-color: white;
@@ -194,7 +81,9 @@ hr {
 .footer {
     background: rgba(100, 100, 100, .3);
     padding-top: 1em;
+    padding-left: 3em;
 }
+
 .copyright {
     text-align: center;
     font-size: .7em;
@@ -318,13 +207,15 @@ hr {
     font-size: 1.5em;
     margin:0 1em 1em 1em;
 } 
+
 .info {
-    margin: .3em 0;
+    margin: 1em 0 2em 0;
 }
 
 .sector {
-    padding: .3em;
+    padding: 2em .3em .3em 2em;
 }
+
 .sector span {
     display: inline-block;
     padding:.5em;
@@ -339,4 +230,125 @@ hr {
 
 .sectors{
     padding-bottom: 1em;
+}
+
+@media(max-width: 22em) {
+    li > a {
+        line-height: 2;
+    }
+    address {
+        font-size: .7em;
+    }
+    body {
+        padding-top: 26px;
+    }
+    .header-container {
+        margin: -26px 0 0 0;
+    }
+
+    .brag-info-mobile {
+        background: rgba(100, 100, 100, .3);
+    }
+
+    .brag-info-desktop {
+        display: none;
+    }
+
+    .brag-image { 
+        padding: 0;
+    }
+}
+
+@media(min-width: 22em) and (max-width: 30em) {
+    .brag-info-mobile {
+        background: rgba(100, 100, 100, .3);
+    }
+
+    .brag-info-desktop {
+        display: none;
+    }
+
+    .brag-image { 
+        padding: 0;
+    }
+    li > a {
+        line-height: 3;
+    }
+    .header-container {
+        margin: -30px 0 0 0; // Adjust
+    }
+    body {
+        padding-top: 30px;
+    }
+    .states {
+        font-size: 1.2em;
+    }
+    ul li {
+        font-size: 1em;
+    }
+}
+
+@media(min-width: 30em)  {
+    .brag-info-mobile {
+        display: none;
+    }
+
+    .brag-info-desktop {
+        position: absolute;
+        width: 30%;
+        background: rgba(130, 130, 130, .7);
+        padding: 3% 1em 1em 1em ;
+        height: 100%; 
+        color: white;
+    }
+    
+    .right{
+        right: 0;
+    }
+
+    .brag-image { 
+        position: relative;
+        left: 1px;
+        padding: 0;
+    }
+
+    li > a {
+        line-height: 4;
+        font-size: 1.5
+    }
+    nav > ul {
+        font-size: 1.4em;
+    }
+    .header-container {
+        margin: -56px 0 0 0; // Adjust
+    }
+    body {
+        padding-top: 56px;
+    }
+    .states {
+        font-size: 1.2em;
+    }
+    .service {
+        font-size: 1.2em;
+    }
+    .perk-col {
+        font-size: 1.2em;
+    }
+    .portrait {
+        padding: 2em;
+    }
+    .apply {
+        margin: 2em;
+    }
+}
+@media (min-width: 60em){
+    .service {
+        border-right: 2px solid rgb(242, 105, 34);
+    }
+    .apply {
+        margin: .2em 0 0 0;
+    }
+    .job {
+        margin: 0;
+    }
 }
