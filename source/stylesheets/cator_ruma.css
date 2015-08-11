@@ -1,4 +1,7 @@
-body {
+ a:hover {
+    text-decoration: none;
+}
+ body {
     font-family: kalinga, Helvetica, Arial, sans-serif;
     margin: 0;
     max-width: 960px;
@@ -53,7 +56,6 @@ li > a:active,
 li > a:visited {
     display: inline-block;
     width: 24%;
-    text-decoration: none;
     color: #555;
 }
 
