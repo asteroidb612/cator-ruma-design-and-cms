@@ -340,3 +340,8 @@ hr {
 .sectors{
     padding-bottom: 1em;
 }
+
+a:hover {
+    text-decoration: none;
+}
+    
