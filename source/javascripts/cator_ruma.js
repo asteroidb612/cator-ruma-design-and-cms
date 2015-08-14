@@ -1,5 +1,25 @@
 $(document).ready(function () {
     resize();
+
+    // var feature = {
+    //     "title": "The Union Station", 
+    //     "text": "Hated Denver Station’s transformation into the Crawford Hotel and iconic hot spot has changed the face of LoDo. Winner of the 2014 American Council of Engineering Companies (ACEC) Excellence Award.", 
+    //     "image": "images/union.web.jpg"
+    //   }
+
+    $.get('index.yaml', function(data) {
+        var index = jsyaml.safeLoad(data);
+        
+        $('#feature-title').text(index.feature.title);
+        $('#feature-text').text(index.feature.text);
+        $('#feature-image').attr('src', index.feature.image);
+        $('#mobile-feature-title').text(index.feature.title);
+        $('#mobile-feature-text').text(index.feature.text);
+
+        $('#mobile-
+
+    });
+
 });
 
 document.addEventListener("touchmove", resize, false);

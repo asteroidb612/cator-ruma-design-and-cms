@@ -1,0 +1,20 @@
+---
+layout: false
+---
+= data.feature.to_yaml
+
+:plain
+  -sectors
+
+- data.slides.sectors.each do |s|
+  :plain
+      -
+        name: #{s}
+        projects: 
+  - 4.times.each do |t|
+    :plain 
+            - 
+              title: #{lorem.name} Project
+              price: $1000
+              sqft: 1000
+              image: #{lorem.image('600x900', :text => "Project #{t+1} image", :random_color => true)}
