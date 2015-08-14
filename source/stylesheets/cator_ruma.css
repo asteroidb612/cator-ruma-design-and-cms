@@ -234,6 +234,11 @@ hr {
     padding-bottom: 1em;
 }
 
+carousel-caption {
+  text-align: left;
+  font-size: 1.2em;
+}  
+
 @media(max-width: 22em) {
     li > a {
         line-height: 2;

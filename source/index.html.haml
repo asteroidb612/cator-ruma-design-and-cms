@@ -105,7 +105,9 @@
                       .item{:class=>("active" if i == 0)}
                         %img{:src => lorem.image('900x600', :text => "#{sec} Image #{i+1}", :random_color => true)}
                         .carousel-caption
-                          = "#{sec} Caption #{i+1}"
+                          %div = "#{sec} Caption #{i+1}"
+                          %div = lorem.sentence
+                          %div = lorem.sentence
                 %a.left.carousel-control{:href => "##{sec}-Carousel-xs", :role=>"button","data-slide" => "prev"} 
                   %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
                   %span.sr-only
@@ -126,7 +128,7 @@
               %img{:src => lorem.image('100x100')}
               %span #{sec}
           .modal{:class => "#{sec}-modal-sm", :role =>"dialog"}
-            .modal-dialog
+            .modal-dialog.modal-lg
               .modal-content
                 .modal-header
                   %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
@@ -142,7 +144,9 @@
                         .item{:class=>("active" if i == 0)}
                           %img{:src => lorem.image('900x600', :text => "#{sec} Image #{i+1}", :random_color => true)}
                           .carousel-caption
-                            = "#{sec} Caption #{i+1}"
+                            %div = "#{sec} Caption #{i+1}"
+                            %div = lorem.sentence
+                            %div = lorem.sentence
                   %a.left.carousel-control{:href => "##{sec}-Carousel-sm", :role=>"button","data-slide" => "prev"} 
                     %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
                     %span.sr-only

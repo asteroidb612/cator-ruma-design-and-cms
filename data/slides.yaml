@@ -10,7 +10,91 @@ sectors:
   - Healthcare
   - Higher-Education
   - Hospitality
-  - K-12
   - Laboratory
+  - K-12
   - Office
   - Religious
+
+principles:
+  - 
+    name: Michael Meints
+    job: CEO
+    flavor: Mechanical Engineer
+    image: meints_m.png
+  - 
+    name: Jim Lazzeri
+    job: President
+    flavor: Mechanical Engineer
+    image: lazzeri_j.png
+  -
+    name: Dennis Rudko
+    job: Principal
+    flavor: Mechanical Engineer
+    image: rudko_d.png
+  - 
+    name: Blake Winter
+    job: Principal
+    flavor: Mechanical Engineer
+    image: winter_b.png
+  - 
+    name: Wayne Trader
+    job: Principal
+    flavor: Mechanical Engineer
+    image: trader_w.png
+  -
+    name: Marc Valerius
+    job: Principal
+    flavor: Electrical Engineer
+    image: valerius_m.png
+  -
+    name: Sean Convery
+    job: Principal
+    flavor: Mechanical Engineer
+    image: convery_s.png
+  -
+    name: Kevin Miller
+    job: Principal
+    flavor: Electrical Engineer
+    image: miller_k.png
+
+associates:
+  -
+    name: "Jerry O'Brien"
+    image: obrien_j.png
+    flavor: Electrical Engineer
+  -
+    name: Mark Jelinske
+    image: jelinske_m.png
+    flavor: Mechanical Engineer
+  - 
+    name: Geri Ann Rosier
+    image: rosier_g.png
+    flavor: Finance Manager
+  - 
+    name: Charles Rogge
+    image: rogge_c.png
+    flavor: Mechanical Engineer 
+  - 
+    name: Jacqueline H. Rudko
+    image: rudko_j.png
+    flavor: Electrical Engineer
+  - 
+    name: Robert Weber
+    image: weber_b.png
+    flavor: Mechanical Engineer
+  - 
+    name: Jeff Jesse
+    image: jesse_j.png
+    flavor: Mechanical Engineer
+  - 
+    name: Gregg McMullen
+    image: mcmullen_g.png
+    flavor: Electrical Engineer
+  - 
+    name: Kelvin Doss
+    image: doss_k.png
+    flavor: Mechanical Engineer 
+  - 
+    name: Neal Wondel
+    image: wondel_n.png
+    flavor: Electrical Engineer

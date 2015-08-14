@@ -31,109 +31,54 @@
     .col-xs-12
       %h2 Individually
       %hr/
-      %h3 Principals
   / The principals
   .row
-    .col-xs-6.col-sm-4.portrait
-      %img.img-responsive.img-rounded{:src => "images/principals/meints_m.png"}/
-      %h4
-        Michael Meints
-        = succeed "CEO" do
-          %br/
-      Mechanical Engineer
-    .col-xs-6.col-sm-4.portrait
-      %img.img-responsive.img-rounded{:src => "images/principals/lazzeri_j.png"}/
-      %h4
-        Jim Lazzeri
-        = succeed "President" do
-          %br/
-      Mechanical Engineer
-    .col-xs-6.col-sm-4.portrait
-      %img.img-responsive.img-rounded{:src => "images/principals/rudko_d.png"}/
-      %h4
-        Dennis Rudko
-        = succeed "Principal" do
-          %br/
-      Mechanical Engineer
-    .col-xs-6.col-sm-4.portrait
-      %img.img-responsive.img-rounded{:src => "images/principals/winter_b.png"}/
-      %h4
-        Blake Winter
-        = succeed "Principal" do
-          %br/
-      Mechanical Engineer
-    .col-xs-6.col-sm-4.portrait
-      %img.img-responsive.img-rounded{:src => "images/principals/trader_w.png"}/
-      %h4
-        Wayne Trader
-        = succeed "Principal" do
-          %br/
-      Mechanical Engineer
-    .col-xs-6.col-sm-4.portrait
-      %img.img-responsive.img-rounded{:src => "images/principals/valerius_m.png"}/
-      %h4
-        Marc Valerius
-        = succeed "Principal" do
-          %br/
-      Electrical Engineer
-    .col-xs-6.col-sm-4.portrait
-      %img.img-responsive.img-rounded{:src => "images/principals/convery_s.png"}/
-      %h4
-        Sean Convery
-        = succeed "Principal" do
-          %br/
-      Mechanical Engineer
-    .col-xs-6.col-sm-4.portrait
-      %img.img-responsive.img-rounded{:src => "images/principals/valerius_m.png"}/
-      %h4
-        Kevin Miller
-        = succeed "Principal" do
-          %br/
-      Electrical Engineer
-  /
-    >div class="row">
-    <div class="col-xs-12" >
-    <h3> Associates </h3>
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-xs-6 col-sm-4 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/obrien_j.png">
-    <h4> Jerry O'Brien <br>Senior Associate</h4> Electrical Engineer
-    </div>
-    <div class="col-xs-6 col-sm-4 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/jelinske_m.png">
-    <h4> Mark Jelinkse <br>Senior Associate</h4> Mechanical Engineer
-    </div>
-    <div class="col-xs-6 col-sm-4 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/rosier_g.png">
-    <h4> Geri Ann Rosier </h4> Finance Manager
-    </div>
-    <div class="col-xs-6 col-sm-4 col-sm-offset-0 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/rogge_c.png">
-    <h4>Charles Rogge</h4> Mechanical Engineer
-    </div>
-    <div class="col-xs-6 col-sm-4 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/rudko_j.png">
-    <h4> Jacqueline H. Rudko </h4> Electrical Engineer
-    </div>
-    <div class="col-xs-6 col-sm-4 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/weber_b.png">
-    <h4> Robert Weber </h4> Mechanical Engineer
-    </div>
-    <div class="col-xs-6 col-sm-4 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/jesse_j.png">
-    <h4> Jeff Jesse </h4> Mechanical Engineer
-    </div>
-    <div class="col-xs-6 col-sm-4 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/mcmullen_g.png">
-    <h4> Gregg McMullen </h4> Electrical Engineer
-    </div>
-    <div class="col-xs-6 col-sm-4 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/doss_k.png">
-    <h4> Kelvin Doss </h4> Mechanical Engineer
-    </div>
-    <div class="col-xs-6 col-sm-4 portrait" >
-    <img class="img-responsive img-rounded" src="images/associates/wondel_n.png">
-    <h4> Neal Wondel</h4> Electrical Engineer
-    </div
+    %h3 Principals
+    - data.slides.principles.each do |p|
+      - target = p.name.delete "^a-zA-Z"
+      %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>"##{target}-modal"}
+        .col-xs-6.col-sm-4.portrait
+          %img.img-responsive.img-rounded{:src=>"images/principals/#{p.image}"}/
+          %h4
+            = p.name 
+            = succeed p.job do
+              %br/
+          = p.flavor
+      .modal{:id => "#{target}-modal", :role =>"dialog"}
+        .modal-dialog
+          .modal-content
+            .modal-header
+              %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
+              %h4 
+                = p.name
+            .modal-body
+              - 3.times.each do |e|
+                .div
+                  = lorem.paragraph
+                  %br/
+                  %br/
+  .row
+    %h3 Associates
+    - data.slides.associates.each do |p|
+      - target = p.name.delete "^a-zA-Z"
+      %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>"##{target}-modal"}
+        .col-xs-6.col-sm-4.portrait
+          %img.img-responsive.img-rounded{:src=>"images/associates/#{p.image}"}/
+          %h4
+            = p.name 
+            = succeed p.job do
+              %br/
+          = p.flavor
+      .modal{:id => "#{target}-modal", :role =>"dialog"}
+        .modal-dialog
+          .modal-content
+            .modal-header
+              %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
+              %h4 
+                = p.name
+            .modal-body
+              - 3.times.each do |e|
+                .div
+                  = lorem.paragraph
+                  %br/
+                  %br/
