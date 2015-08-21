@@ -1,17 +1,19 @@
 .container-fluid
-  .row
-    .col-xs-12.brag-image
-      .brag-info-desktop.right
-        %h3#feature-title 
-        %p#feature-text  
-      %img#feature-image.img-responsive{}/
-    .col-xs-12.brag-info-mobile
-      %h3#mobile-feature-title 
-      %p#mobile-feature-text 
+  %script#feature{:type=>"x-handlebars-template"}
+    .row
+      .col-xs-12.feature-image
+        .feature-info-desktop.right
+          %h3 {{feature.title}}
+          %p {{feature.text}}
+        %img.img-responsive{:src => "{{feature.image}}"}/
+      .col-xs-12.feature-info-mobile
+        %h3 {{feature.title}}
+        %p {{feature.text}}
+  .row#feature-placeholder
   / Services Grid
   %h1 Services
   %hr/
-  .row
+  .row#sectors-placeholder
     .col-xs-6.service.visible-xs
       %span.glyphicon.glyphicon-fire.perk
       %br/
@@ -80,78 +82,94 @@
       Lighting
       %br/
 
-    .sectors.col-xs-12.visible-xs
-      %hr/
-      - 9.times.each do |s|
-        - sec = data.slides.sectors[s]
-        %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>"##{sec}-modal-xs"}
+    %script#sectors{:type=>"x-handlebars-template"}
+      :plain
+        {{#each halves}}
+      .sectors.col-sm-5.hidden-xs
+        :plain
+          {{#each this}}
+        %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>".{{name}}-modal-sm"}
           .sector
-            %img{:src => lorem.image('100x100')}
-            %span #{sec}
-        .modal{:id => "#{sec}-modal-xs", :role =>"dialog"}
-          .modal-dialog
+            %img{:src => "{{image}}"}
+            %span {{name}}
+        .modal{:class => "{{name}}-modal-sm", :role =>"dialog"}
+          .modal-dialog.modal-lg
             .modal-content
               .modal-header
                 %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
               .modal-body
-                .carousel.slide{:id => "#{sec}-Carousel-xs","data-ride" => "carousel"}
+                .carousel.slide{:id => "{{name}}-Carousel-sm","data-ride" => "carousel"}
                   %ol.carousel-indicators
-                    %li.active{"data-target"=>"#{sec}-Carousel-xs", "data-slide-to"=>"0"}
-                    %li{"data-target"=>"#{sec}-Carousel-xs", "data-slide-to"=>"1"}
-                    %li{"data-target"=>"#{sec}-Carousel-xs", "data-slide-to"=>"2"}
-                    %li{"data-target"=>"#{sec}-Carousel-xs", "data-slide-to"=>"3"}
+                    %li.active{"data-target"=>"{{name}}-Carousel-sm", "data-slide-to"=>"0"}
+                    %li{"data-target"=>"{{name}}-Carousel-sm", "data-slide-to"=>"1"}
+                    %li{"data-target"=>"{{name}}-Carousel-sm", "data-slide-to"=>"2"}
+                    %li{"data-target"=>"{{name}}-Carousel-sm", "data-slide-to"=>"3"}
                   .carousel-inner{:role => "listbox"}
-                    - 4.times.each do |i|
-                      .item{:class=>("active" if i == 0)}
-                        %img{:src => lorem.image('900x600', :text => "#{sec} Image #{i+1}", :random_color => true)}
-                        .carousel-caption
-                          %div = "#{sec} Caption #{i+1}"
-                          %div = lorem.sentence
-                          %div = lorem.sentence
-                %a.left.carousel-control{:href => "##{sec}-Carousel-xs", :role=>"button","data-slide" => "prev"} 
+                    :plain
+                      {{#each projects}}
+                    .item{:class => "{{#if @first}}active{{/if}}"}
+                      %img{:src => "{{image}}"}
+                      .carousel-caption
+                        %div {{title}}
+                        %div {{sqft}}sqft
+                        %div {{price}}
+                    :plain
+                      {{/each}}
+                %a.left.carousel-control{:href => "\#{{name}}-Carousel-sm", :role=>"button","data-slide" => "prev"} 
                   %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
                   %span.sr-only
                     Previous
-                %a.right.carousel-control{:href => "##{sec}-Carousel-xs", :role=>"button","data-slide" => "next"} 
+                %a.right.carousel-control{:href => "\#{{name}}-Carousel-sm", :role=>"button","data-slide" => "next"} 
                   %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
                   %span.sr-only
                     Next
+        :plain
+          {{/each}}
+      :plain
+        {{/each}}
 
-    /Alright bear with me...
-    /[[Amount_of_sectors_to_put_in_column, Amount_of_sectors_to_skip]] for two columns
-    - [[5, 0], [4, 5]].each do |x|
-      .sectors.col-sm-5.hidden-xs
-        - x[0].times.each do |s|
-          - sec = data.slides.sectors[x[1]+s]
-          %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>".#{sec}-modal-sm"}
-            .sector
-              %img{:src => lorem.image('100x100')}
-              %span #{sec}
-          .modal{:class => "#{sec}-modal-sm", :role =>"dialog"}
-            .modal-dialog.modal-lg
-              .modal-content
-                .modal-header
-                  %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
-                .modal-body
-                  .carousel.slide{:id => "#{sec}-Carousel-sm","data-ride" => "carousel"}
-                    %ol.carousel-indicators
-                      %li.active{"data-target"=>"#{sec}-Carousel-sm", "data-slide-to"=>"0"}
-                      %li{"data-target"=>"#{sec}-Carousel-sm", "data-slide-to"=>"1"}
-                      %li{"data-target"=>"#{sec}-Carousel-sm", "data-slide-to"=>"2"}
-                      %li{"data-target"=>"#{sec}-Carousel-sm", "data-slide-to"=>"3"}
-                    .carousel-inner{:role => "listbox"}
-                      - 4.times.each do |i|
-                        .item{:class=>("active" if i == 0)}
-                          %img{:src => lorem.image('900x600', :text => "#{sec} Image #{i+1}", :random_color => true)}
-                          .carousel-caption
-                            %div = "#{sec} Caption #{i+1}"
-                            %div = lorem.sentence
-                            %div = lorem.sentence
-                  %a.left.carousel-control{:href => "##{sec}-Carousel-sm", :role=>"button","data-slide" => "prev"} 
-                    %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
-                    %span.sr-only
-                      Previous
-                  %a.right.carousel-control{:href => "##{sec}-Carousel-sm", :role=>"button","data-slide" => "next"} 
-                    %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
-                    %span.sr-only
-                      Next
+    /Mobile/bootstrap-xs sectors section  
+    .sectors.col-xs-12.visible-xs#mobile-sectors-placeholder
+    %script#mobile-sectors{:type=>"x-handlebars-template"}
+      %hr/
+      :plain
+        {{#each sectors}}
+      %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>"\#{{name}}-modal-xs"}
+        .sector
+          %img{:src => "{{image}}"}
+          %span {{name}}
+      .modal{:id => "{{name}}-modal-xs", :role =>"dialog"}
+        .modal-dialog
+          .modal-content
+            .modal-header
+              %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
+            .modal-body
+              .carousel.slide{:id => "{{name}}-Carousel-xs","data-ride" => "carousel"}
+                %ol.carousel-indicators
+                  %li.active{"data-target"=>"{{name}}-Carousel-xs", "data-slide-to"=>"0"}
+                  %li{"data-target"=>"{{name}}-Carousel-xs", "data-slide-to"=>"1"}
+                  %li{"data-target"=>"{{name}}-Carousel-xs", "data-slide-to"=>"2"}
+                  %li{"data-target"=>"{{name}}-Carousel-xs", "data-slide-to"=>"3"}
+                .carousel-inner{:role => "listbox"}
+                  :plain
+                    {{#each projects}}
+                  /Need to find a way to make have activated attribute (or class?)
+                  .item{:class => "{{#if @first}}active{{/if}}"}
+                    %img{:src => "{{image}}"}
+                    .carousel-caption
+                      %div {{title}}
+                      %div {{sqft}}sqft
+                      %div {{price}}
+                  :plain
+                    {{/each}}
+              %a.left.carousel-control{:href => "\#{{name}}-Carousel-xs", :role=>"button","data-slide" => "prev"} 
+                %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+                %span.sr-only
+                  Previous
+              %a.right.carousel-control{:href => "\#{{name}}-Carousel-xs", :role=>"button","data-slide" => "next"} 
+                %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+                %span.sr-only
+                  Next
+      :plain 
+        {{/each}}
+

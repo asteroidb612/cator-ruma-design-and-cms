@@ -4,12 +4,13 @@ layout: false
 = data.feature.to_yaml
 
 :plain
-  -sectors
+  sectors:
 
 - data.slides.sectors.each do |s|
   :plain
       -
         name: #{s}
+        image: "https://placehold.it/40x40"
         projects: 
   - 4.times.each do |t|
     :plain 
@@ -17,4 +18,4 @@ layout: false
               title: #{lorem.name} Project
               price: $1000
               sqft: 1000
-              image: #{lorem.image('600x900', :text => "Project #{t+1} image", :random_color => true)}
+              image: #{lorem.image('900x600', :text => "Project #{t+1} image", :random_color => true)}

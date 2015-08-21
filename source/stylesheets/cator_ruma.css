@@ -238,6 +238,9 @@ carousel-caption {
   text-align: left;
   font-size: 1.2em;
 }  
+carousel-caption > div {
+    margin-left: 0;
+  }
 
 @media(max-width: 22em) {
     li > a {
@@ -253,29 +256,29 @@ carousel-caption {
         margin: -26px 0 0 0;
     }
 
-    .brag-info-mobile {
+    .feature-info-mobile {
         background: rgba(100, 100, 100, .3);
     }
 
-    .brag-info-desktop {
+    .feature-info-desktop {
         display: none;
     }
 
-    .brag-image { 
+    .feature-image { 
         padding: 0;
     }
 }
 
 @media(min-width: 22em) and (max-width: 30em) {
-    .brag-info-mobile {
+    .feature-info-mobile {
         background: rgba(100, 100, 100, .3);
     }
 
-    .brag-info-desktop {
+    .feature-info-desktop {
         display: none;
     }
 
-    .brag-image { 
+    .feature-image { 
         padding: 0;
     }
     li > a {
@@ -296,11 +299,11 @@ carousel-caption {
 }
 
 @media(min-width: 30em)  {
-    .brag-info-mobile {
+    .feature-info-mobile {
         display: none;
     }
 
-    .brag-info-desktop {
+    .feature-info-desktop {
         position: absolute;
         width: 30%;
         background: rgba(130, 130, 130, .7);
@@ -313,7 +316,7 @@ carousel-caption {
         right: 0;
     }
 
-    .brag-image { 
+    .feature-image { 
         position: relative;
         left: 1px;
         padding: 0;
