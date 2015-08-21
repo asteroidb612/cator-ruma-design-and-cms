@@ -107,7 +107,7 @@
                   .carousel-inner{:role => "listbox"}
                     :plain
                       {{#each projects}}
-                    .item{:class => "{{#if @first}}active{{/if}}"}
+                    .item{:class => "###"}
                       %img{:src => "{{image}}"}
                       .carousel-caption
                         %div {{title}}
@@ -154,7 +154,7 @@
                   :plain
                     {{#each projects}}
                   /Need to find a way to make have activated attribute (or class?)
-                  .item{:class => "{{#if @first}}active{{/if}}"}
+                  .item{:class => "###"}
                     %img{:src => "{{image}}"}
                     .carousel-caption
                       %div {{title}}
