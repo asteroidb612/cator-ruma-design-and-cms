@@ -258,6 +258,7 @@ carousel-caption > div {
 
     .feature-info-mobile {
         background: rgba(100, 100, 100, .3);
+        padding: 0 25;
     }
 
     .feature-info-desktop {
@@ -272,6 +273,7 @@ carousel-caption > div {
 @media(min-width: 22em) and (max-width: 30em) {
     .feature-info-mobile {
         background: rgba(100, 100, 100, .3);
+        padding: 0 25px;
     }
 
     .feature-info-desktop {
