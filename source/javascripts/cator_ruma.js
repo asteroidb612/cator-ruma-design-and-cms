@@ -1,3 +1,7 @@
+function class_safe(string) {
+//Remove everything but alphanumeric for use in classes
+    return string.replace(/\W/g, ''); 
+}
 function resize() {
     var h = $('.header-container').height();
     var total_width = $('.header-container').width();

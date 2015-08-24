@@ -35,6 +35,11 @@ $(document).ready(function () {
                 yaml.halves = [yaml.sectors.slice(0, mid), 
                                yaml.sectors.slice(mid)];
 
+                for (var i=0; i<yaml.sectors.length; i++) {
+                    yaml.sectors[i].safename = class_safe(yaml.sectors[i].name)
+                    console.log(yaml.sectors[i]);
+                }
+
                 $('#feature-placeholder').html(feature_template(yaml));
                 $('#mobile-sectors-placeholder').html(mobile_sectors_template(yaml));
                 $('#sectors-placeholder').append(sectors_template(yaml));

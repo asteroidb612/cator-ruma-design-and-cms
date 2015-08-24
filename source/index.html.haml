@@ -90,22 +90,22 @@
       .sectors.col-sm-5.hidden-xs
         :plain
           {{#each this}}
-        %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>".{{name}}-modal-sm"}
+        %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>".{{safename}}-modal-sm"}
           .sector
             %img{:src => "{{image}}"}
             %span {{name}}
-        .modal{:class => "{{name}}-modal-sm", :role =>"dialog"}
+        .modal{:class => "{{safename}}-modal-sm", :role =>"dialog"}
           .modal-dialog.modal-lg
             .modal-content
               .modal-header
                 %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
               .modal-body
-                .carousel.slide{:id => "{{name}}-Carousel-sm","data-ride" => "carousel"}
+                .carousel.slide{:id => "{{safename}}-Carousel-sm","data-ride" => "carousel"}
                   %ol.carousel-indicators
-                    %li.active{"data-target"=>"{{name}}-Carousel-sm", "data-slide-to"=>"0"}
-                    %li{"data-target"=>"{{name}}-Carousel-sm", "data-slide-to"=>"1"}
-                    %li{"data-target"=>"{{name}}-Carousel-sm", "data-slide-to"=>"2"}
-                    %li{"data-target"=>"{{name}}-Carousel-sm", "data-slide-to"=>"3"}
+                    %li.active{"data-target"=>"{{safename}}-Carousel-sm", "data-slide-to"=>"0"}
+                    %li{"data-target"=>"{{safename}}-Carousel-sm", "data-slide-to"=>"1"}
+                    %li{"data-target"=>"{{safename}}-Carousel-sm", "data-slide-to"=>"2"}
+                    %li{"data-target"=>"{{safename}}-Carousel-sm", "data-slide-to"=>"3"}
                   .carousel-inner{:role => "listbox"}
                     :plain
                       {{#each projects}}
@@ -117,11 +117,11 @@
                         %div {{price}}
                     :plain
                       {{/each}}
-                %a.left.carousel-control{:href => "\#{{name}}-Carousel-sm", :role=>"button","data-slide" => "prev"} 
+                %a.left.carousel-control{:href => "\#{{safename}}-Carousel-sm", :role=>"button","data-slide" => "prev"} 
                   %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
                   %span.sr-only
                     Previous
-                %a.right.carousel-control{:href => "\#{{name}}-Carousel-sm", :role=>"button","data-slide" => "next"} 
+                %a.right.carousel-control{:href => "\#{{safename}}-Carousel-sm", :role=>"button","data-slide" => "next"} 
                   %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
                   %span.sr-only
                     Next
@@ -136,22 +136,22 @@
       %hr/
       :plain
         {{#each sectors}}
-      %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>"\#{{name}}-modal-xs"}
+      %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>"\#{{safename}}-modal-xs"}
         .sector
           %img{:src => "{{image}}"}
           %span {{name}}
-      .modal{:id => "{{name}}-modal-xs", :role =>"dialog"}
+      .modal{:id => "{{safename}}-modal-xs", :role =>"dialog"}
         .modal-dialog
           .modal-content
             .modal-header
               %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
             .modal-body
-              .carousel.slide{:id => "{{name}}-Carousel-xs","data-ride" => "carousel"}
+              .carousel.slide{:id => "{{safename}}-Carousel-xs","data-ride" => "carousel"}
                 %ol.carousel-indicators
-                  %li.active{"data-target"=>"{{name}}-Carousel-xs", "data-slide-to"=>"0"}
-                  %li{"data-target"=>"{{name}}-Carousel-xs", "data-slide-to"=>"1"}
-                  %li{"data-target"=>"{{name}}-Carousel-xs", "data-slide-to"=>"2"}
-                  %li{"data-target"=>"{{name}}-Carousel-xs", "data-slide-to"=>"3"}
+                  %li.active{"data-target"=>"{{safename}}-Carousel-xs", "data-slide-to"=>"0"}
+                  %li{"data-target"=>"{{safename}}-Carousel-xs", "data-slide-to"=>"1"}
+                  %li{"data-target"=>"{{safename}}-Carousel-xs", "data-slide-to"=>"2"}
+                  %li{"data-target"=>"{{safename}}-Carousel-xs", "data-slide-to"=>"3"}
                 .carousel-inner{:role => "listbox"}
                   :plain
                     {{#each projects}}
@@ -164,11 +164,11 @@
                       %div {{price}}
                   :plain
                     {{/each}}
-              %a.left.carousel-control{:href => "\#{{name}}-Carousel-xs", :role=>"button","data-slide" => "prev"} 
+              %a.left.carousel-control{:href => "\#{{safename}}-Carousel-xs", :role=>"button","data-slide" => "prev"} 
                 %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
                 %span.sr-only
                   Previous
-              %a.right.carousel-control{:href => "\#{{name}}-Carousel-xs", :role=>"button","data-slide" => "next"} 
+              %a.right.carousel-control{:href => "\#{{safename}}-Carousel-xs", :role=>"button","data-slide" => "next"} 
                 %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
                 %span.sr-only
                   Next

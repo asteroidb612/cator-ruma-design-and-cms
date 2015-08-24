@@ -22,10 +22,10 @@ $(document).ready(function() {
                 
                 //Add a class-safe string for modal data targets
                 for (var i=0; i<yaml.principals.length; i++) {
-                    yaml.principals[i].target =  yaml.principals[i].name.replace(/[^A-Za-z]/g,'');
+                    yaml.principals[i].target =  class_safe(yaml.principals[i].name)
                 }
                 for (var i=0; i<yaml.associates.length; i++) {
-                    yaml.associates[i].target =  yaml.associates[i].name.replace(/[^A-Za-z]/g,'');
+                    yaml.associates[i].target =  class_safe(yaml.associates[i].name)
                 }
 
                 $('#media-placeholder').html(media_template(yaml));
