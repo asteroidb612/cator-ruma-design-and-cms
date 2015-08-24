@@ -1,84 +1,84 @@
-:css
-  hr.nav-underline {margin-left: 25%;}
-%video.bg_video{:autoplay => "true", :height => "100%", :loop => "true", :muted => "true", :width => "100%"}
-  %source{:src => "videos/work.mp4", :type => "video/mp4"}
-  %source{:src => "videos/work.webm", :type => "video/webm"}
-  %source{:src => "videos/work.ogv", :type => "video/ogg"}
-  Update yo Broswer yo!
+= content_for :assets do
+  = javascript_include_tag 'about'
+  :css
+    hr.nav-underline {margin-left: 25%;}
+
+%script#media{:type=>"x-handlebars-template"}
+  %source{:src => "{{feature-video-mp4}}", :type => "video/mp4"}
+  %source{:src => "{{feature-video-ogv}}", :type => "video/webm"}
+  %source{:src => "{{feature-video-webm}}", :type => "video/ogg"}
+  %img{:src => "{{feature-image}}"}
+
+%video#media-placeholder.bg_video{:autoplay => "true", :height => "100%", :loop => "true", :muted => "true", :width => "100%"}
+
 .container-fluid
-  .row
+  %script#about{:type=>"x-handlebars-template"}
     .col-xs-12
-      %p
       %h2 Together
       %hr/
-      1959, Cator, Ruma &amp; Associates has been providing
-      consulting engineering services for institutional, commercial,
-      industrial, and medical facilities through Colorado and the
-      Western Region. We are one of the premier mechanical, electrical, 
-      plumbing, architectural lighting, and information technology firms 
-      in the western United States.
-      %br/
-      %br/
-  %p.hidden-xs
-    With over 80 employees and three offices in the western
-    region, our firm has been built on a solid foundation of engineering knowledge. Since our
-    founding, we have worked with many architects and institutions to build thriving communities.
-    Our project success has allowed us to develop a long-standing and faithful repeat client base in
-    healthcare, higher education, K-12, federal government, municipalities, and private industry.
-    Our depth of experience helps us achieve value driven building systems that are optimized for
-    energy efficiency and comfort.
+      %p {{together-main}}
+      %p.hidden-xs {{together-extra}}
+  .row#about-placeholder
   .row
     .col-xs-12
       %h2 Individually
       %hr/
   / The principals
-  .row
+  %script#principals{:type=>"x-handlebars-template"}
     %h3 Principals
-    - data.slides.principles.each do |p|
-      - target = p.name.delete "^a-zA-Z"
-      %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>"##{target}-modal"}
-        .col-xs-6.col-sm-4.portrait
-          %img.img-responsive.img-rounded{:src=>"images/principals/#{p.image}"}/
-          %h4
-            = p.name 
-            = succeed p.job do
-              %br/
-          = p.flavor
-      .modal{:id => "#{target}-modal", :role =>"dialog"}
-        .modal-dialog
-          .modal-content
-            .modal-header
-              %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
-              %h4 
-                = p.name
-            .modal-body
-              - 3.times.each do |e|
-                .div
-                  = lorem.paragraph
-                  %br/
-                  %br/
-  .row
+    :plain 
+      {{#each principals}}
+    %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>".{{target}}-modal"}
+      .col-xs-6.col-sm-4.portrait
+        %img.img-responsive.img-rounded{:src=>"{{image}}"}/
+        %h4
+          :plain
+            {{name}}
+            {{job}}
+        :plain
+          {{flavor}}
+    .modal{:class => "{{target}}-modal", :role =>"dialog"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
+            %h4 
+              {{name}}
+          .modal-body
+            - 3.times.each do |e|
+              .div
+                = lorem.paragraph
+                %br/
+                %br/
+    :plain
+      {{/each}}
+  .row#principals-placeholder
+  %script#associates{:type=>"x-handlebars-template"}
     %h3 Associates
-    - data.slides.associates.each do |p|
-      - target = p.name.delete "^a-zA-Z"
-      %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>"##{target}-modal"}
-        .col-xs-6.col-sm-4.portrait
-          %img.img-responsive.img-rounded{:src=>"images/associates/#{p.image}"}/
-          %h4
-            = p.name 
-            = succeed p.job do
-              %br/
-          = p.flavor
-      .modal{:id => "#{target}-modal", :role =>"dialog"}
-        .modal-dialog
-          .modal-content
-            .modal-header
-              %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
-              %h4 
-                = p.name
-            .modal-body
-              - 3.times.each do |e|
-                .div
-                  = lorem.paragraph
-                  %br/
-                  %br/
+    :plain 
+      {{#each associates}}
+    %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>".{{target}}-modal"}
+      .col-xs-6.col-sm-4.portrait
+        %img.img-responsive.img-rounded{:src=>"{{image}}"}/
+        %h4
+          :plain
+            {{name}}
+            {{job}}
+        :plain
+          {{flavor}}
+    .modal{:class => "{{target}}-modal", :role =>"dialog"}
+      .modal-dialog
+        .modal-content
+          .modal-header
+            %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
+            %h4 
+              {{name}}
+          .modal-body
+            - 3.times.each do |e|
+              .div
+                = lorem.paragraph
+                %br/
+                %br/
+    :plain
+      {{/each}}
+  .row#associates-placeholder
