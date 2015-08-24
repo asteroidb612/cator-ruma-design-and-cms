@@ -1,9 +1,13 @@
-:css
-  hr.nav-underline {margin-left: 50%;}
+= content_for :assets do
+  = javascript_include_tag 'careers'
+  :css
+    hr.nav-underline {margin-left: 50%;}
+
 .container-fluid
   .row
-    .col-xs-12.feature-image
-      %img#hats.img-responsive{:src => "images/hats.web.jpg"}
+    %script#feature{:type => 'x-handlebars-template'}
+      %img.img-responsive{:src => "{{feature-image}}"}
+    #feature-placeholder.col-xs-12.feature-image
   .row
     .col-xs-12.job-shortcut{:onclick => "$.scrollTo('#open-positions', 600)"}
       %a
