@@ -43,13 +43,16 @@
           .modal-header
             %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
             %br/
-            %img.img-responsive.img-rounded{:src=>"{{image}}", :style => "display: inline"}/
-            %div{:style => "display: inline-block; padding: 1em 0 0 1em;"}
-              %h2{:style => "display: inline"}
+            %img.img-responsive.img-rounded.bio-picture{:src=>"{{image}}"}/
+            %div.bio
+              %h2
                 {{name}}
               %h4 {{job}}
               %h4 {{flavor}}
           .modal-body
+            .div
+              :plain
+                {{bio}}
     :plain
       {{/each}}
   .row#principals-placeholder

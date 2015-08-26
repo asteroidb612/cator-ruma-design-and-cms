@@ -237,6 +237,18 @@ carousel-caption > div {
   margin-left: 0;
 }
 
+.bio-picture{
+    display: inline;
+  }
+
+.bio{
+  display: inline-block; 
+  padding: 1em 0 0 1em;
+}
+.bio > h2 {
+    display: inline
+  }
+
 @media(max-width: 22em) {
   li > a {
     line-height: 2;
