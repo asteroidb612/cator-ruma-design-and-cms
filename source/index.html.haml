@@ -50,41 +50,17 @@
       %br/
       Lighting
       %br/
-    .col-xs-6.service.col-sm-2.hidden-xs
-      %span.glyphicon.glyphicon-fire.perk
-      %br/
-      Fire Detection
-      %br/
-      %span.glyphicon.glyphicon-tint.perk
-      %br/
-      Fire Prevention
-      %br/
-      %span.glyphicon.glyphicon-retweet.perk
-      %br/
-      HVAC
-      %br/
-      %span.glyphicon.glyphicon-flash.perk
-      %br/
-      Power
-      %br/
-      %span.glyphicon.glyphicon-wrench.perk
-      %br/
-      Plumbing
-      %br/
-      %span.glyphicon.glyphicon-scale.perk
-      %br/
-      Low Voltage
-      %br/
-      %span.glyphicon.glyphicon-duplicate.perk
-      %br/
-      Commissioning
-      %br/
-      %span.glyphicon.glyphicon-volume-up.gly-rotate-90.perk
-      %br/
-      Lighting
-      %br/
 
     %script#sectors{:type=>"x-handlebars-template"}
+      .col-xs-6.service.col-sm-2.hidden-xs
+        :plain
+          {{#each services}}
+        %span.glyphicon.perk{:class => "glyphicon-{{icon}}"}
+        %br/
+        {{name}}
+        %br/
+        :plain
+          {{/each}}
       :plain
         {{#each halves}}
       .sectors.col-sm-5.hidden-xs

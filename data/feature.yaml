@@ -2,3 +2,29 @@ feature:
   title: Union Station
   image: images/union.web.jpg
   text: The Beloved Denver Station’s transformation into the Crawford Hotel and iconic hot spot has changed the face of LoDo. Winner of the 2014 American Council of Engineering Companies (ACEC) Excellence Award.
+
+services:
+  - 
+    name: Fire Detection
+    icon: fire
+  - 
+    name: Fire Prevention
+    icon: tint
+  -
+    name: HVAC
+    icon: retweet
+  -
+    name: Power
+    icon: flash
+  -
+    name: Plumbing
+    icon: wrench
+  -
+    name: Low Voltage
+    icon: scale
+  -
+    name: Commissioning
+    icon: duplicate
+  -
+    name: Lighting
+    icon: volume-up gly-rotate-90
