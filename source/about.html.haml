@@ -42,14 +42,14 @@
         .modal-content
           .modal-header
             %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
-            %h4 
-              {{name}}
+            %br/
+            %img.img-responsive.img-rounded{:src=>"{{image}}", :style => "display: inline"}/
+            %div{:style => "display: inline-block; padding: 1em 0 0 1em;"}
+              %h2{:style => "display: inline"}
+                {{name}}
+              %h4 {{job}}
+              %h4 {{flavor}}
           .modal-body
-            - 3.times.each do |e|
-              .div
-                = lorem.paragraph
-                %br/
-                %br/
     :plain
       {{/each}}
   .row#principals-placeholder
@@ -71,14 +71,16 @@
         .modal-content
           .modal-header
             %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
-            %h4 
-              {{name}}
+            %br/
+            %img.img-responsive.img-rounded{:src=>"{{image}}", :style => "display: inline"}/
+            %div{:style => "display: inline-block; padding: 1em 0 0 1em;"}
+              %h2{:style => "display: inline"}
+                {{name}}
+              %h4 {{flavor}}
           .modal-body
-            - 3.times.each do |e|
-              .div
-                = lorem.paragraph
-                %br/
-                %br/
+            .div
+              :plain
+                {{bio}}
     :plain
       {{/each}}
   .row#associates-placeholder
