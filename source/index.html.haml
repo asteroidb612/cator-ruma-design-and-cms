@@ -68,8 +68,8 @@
           {{#each this}}
         %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>".{{safename}}-modal-sm"}
           .sector
-            %img{:src => "{{image}}"}
             %h3 {{name}}
+            %img{:src => "{{image}}"}
         .modal{:class => "{{safename}}-modal-sm", :role =>"dialog"}
           .modal-dialog.modal-lg
             .modal-content
@@ -114,8 +114,8 @@
         {{#each sectors}}
       %a{:type=>"button", "data-toggle"=>"modal", "data-target"=>"\#{{safename}}-modal-xs"}
         .sector
-          %img{:src => "{{image}}"}
           %span {{name}}
+          %img{:src => "{{image}}"}
       .modal{:id => "{{safename}}-modal-xs", :role =>"dialog"}
         .modal-dialog
           .modal-content

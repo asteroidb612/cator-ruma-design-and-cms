@@ -1,4 +1,8 @@
+a {
+  color: rgb(51, 51, 51);
+}
 a:hover {
+  color: rgb(51, 51, 51);
   text-decoration: none;
 }
 body {
@@ -214,9 +218,21 @@ hr {
   margin: 1em 0 2em 0;
 }
 
-.sector span {
+.sector {
+  border : 2px solid white;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+          }
+
+.sector:hover {
+  border: 2px solid rgb(242, 105, 34);
+}
+
+.sector h3{
   display: inline-block;
-  padding:.5em;
+  padding-left:.5em;
   font-size: 1.8em;
 }
 
@@ -227,11 +243,11 @@ hr {
 .sector > img {
   display: block;
   width: 100%;
-  }
+}
 
-  carousel-caption {
-    text-align: left;
-    font-size: 1.2em;
+carousel-caption {
+  text-align: left;
+  font-size: 1.2em;
 }  
 carousel-caption > div {
   margin-left: 0;
@@ -240,122 +256,122 @@ carousel-caption > div {
 @media(max-width: 22em) {
   li > a {
     line-height: 2;
-  }
-  address {
-    font-size: .7em;
-  }
-  body {
-    padding-top: 26px;
-  }
-  .header-container {
-    margin: -26px 0 0 0;
-  }
+}
+address {
+  font-size: .7em;
+}
+body {
+  padding-top: 26px;
+}
+.header-container {
+  margin: -26px 0 0 0;
+}
 
-  .feature-info-mobile {
-    background: rgba(100, 100, 100, .3);
-    padding: 0 25;
-  }
+.feature-info-mobile {
+  background: rgba(100, 100, 100, .3);
+  padding: 0 25;
+}
 
-  .feature-info-desktop {
-    display: none;
-  }
+.feature-info-desktop {
+  display: none;
+}
 
-  .feature-image { 
-    padding: 0;
-  }
+.feature-image { 
+  padding: 0;
+}
 }
 
 @media(min-width: 22em) and (max-width: 30em) {
   .feature-info-mobile {
     background: rgba(100, 100, 100, .3);
     padding: 0 25px;
-  }
+}
 
-  .feature-info-desktop {
-    display: none;
-  }
+.feature-info-desktop {
+  display: none;
+}
 
-  .feature-image { 
-    padding: 0;
-  }
-  li > a {
-    line-height: 3;
-  }
-  .header-container {
-    margin: -30px 0 0 0; // Adjust
-  }
-  body {
-    padding-top: 30px;
-  }
-  .states {
-    font-size: 1.2em;
-  }
-  ul li {
-    font-size: 1em;
-  }
+.feature-image { 
+  padding: 0;
+}
+li > a {
+  line-height: 3;
+}
+.header-container {
+  margin: -30px 0 0 0; // Adjust
+}
+body {
+  padding-top: 30px;
+}
+.states {
+  font-size: 1.2em;
+}
+ul li {
+  font-size: 1em;
+}
 }
 
 @media(min-width: 30em)  {
   .feature-info-mobile {
     display: none;
-  }
+}
 
-  .feature-info-desktop {
-    position: absolute;
-    width: 30%;
-    background: rgba(130, 130, 130, .7);
-    padding: 3% 1em 1em 1em ;
-    height: 100%; 
-    color: white;
-  }
+.feature-info-desktop {
+  position: absolute;
+  width: 30%;
+  background: rgba(130, 130, 130, .7);
+  padding: 3% 1em 1em 1em ;
+  height: 100%; 
+  color: white;
+}
 
-  .right{
-    right: 0;
-  }
+.right{
+  right: 0;
+}
 
-  .feature-image { 
-    position: relative;
-    left: 1px;
-    padding: 0;
-  }
+.feature-image { 
+  position: relative;
+  left: 1px;
+  padding: 0;
+}
 
-  li > a {
-    line-height: 4;
-    font-size: 1.5
-  }
-  nav > ul {
-    font-size: 1.4em;
-  }
-  .header-container {
-    margin: -56px 0 0 0; // Adjust
-  }
-  body {
-    padding-top: 56px;
-  }
-  .states {
-    font-size: 1.2em;
-  }
-  .service {
-    font-size: 1.2em;
-  }
-  .perk-col {
-    font-size: 1.2em;
-  }
-  .portrait {
-    padding: 2em;
-  }
-  .apply {
-    margin: 2em;
-  }
+li > a {
+  line-height: 4;
+  font-size: 1.5
+}
+nav > ul {
+  font-size: 1.4em;
+}
+.header-container {
+  margin: -56px 0 0 0; // Adjust
+}
+body {
+  padding-top: 56px;
+}
+.states {
+  font-size: 1.2em;
+}
+.service {
+  font-size: 1.2em;
+}
+.perk-col {
+  font-size: 1.2em;
+}
+.portrait {
+  padding: 2em;
+}
+.apply {
+  margin: 2em;
+}
 }
 @media (min-width: 60em){
   .service {
     border-right: 2px solid rgb(242, 105, 34);
-  }
-  .apply {
-    margin: .2em 0 0 0;
-  }
-  .job {
-    margin: 0;
-  }
+}
+.apply {
+  margin: .2em 0 0 0;
+}
+.job {
+  margin: 0;
+}
 }
