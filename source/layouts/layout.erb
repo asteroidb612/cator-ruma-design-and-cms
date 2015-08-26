@@ -20,19 +20,25 @@
   </head>
   <body>
     <div class="header-container">
-      <img id="logo" src="images/logo.svg" alt="Cator Ruma Logo"><!--
-                                                                   --><header>
-        <nav> <!-- These have to be tip to tip because inline acknowledges whitespace-->
-          <ul><li class="one"> <a href="index.html"> What We Do </a>
-            </li><li class="two" >
-              <a href="about.html"> Who We Are </a>
-            </li><li class="three"> 
-              <a href="careers.html" > Work With Us </a>
-            </li><li class="four" onclick="$.scrollTo('max', 600)"> 
-              <a href="#" > Contact Us </a>
-            </li>
-            <hr class="nav-underline"></ul>
-        </nav>
+      <img id="logo" src="images/logo.svg" alt="Cator Ruma Logo">
+      <header>
+
+      <div class="company-name">
+        <span>CATOR<span class="bar" > | </span>RUMA </span>
+        <span class="associates">&amp; ASSOCIATES, co.</span>
+      </div>
+
+      <nav> <!-- These have to be tip to tip because inline acknowledges whitespace-->
+      <ul><li class="one"> <a href="index.html"> What We Do </a>
+        </li><li class="two" >
+        <a href="about.html"> Who We Are </a>
+        </li><li class="three"> 
+        <a href="careers.html" > Work With Us </a>
+        </li><li class="four" onclick="$.scrollTo('max', 600)"> 
+        <a href="#" > Contact Us </a>
+        </li>
+        <hr class="nav-underline"></ul>
+      </nav>
       </header>
     </div>
     <%= yield %>

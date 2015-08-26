@@ -1,3 +1,21 @@
+.associates {
+    vertical-align: middle;
+    font-size: .5em;
+}
+
+.company-name {
+    letter-spacing: 1px;
+    font-family: kalinga; 
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.bar {
+    font-family: kalinga;
+    color: rgb(242, 105, 34); 
+}
+
 a:hover {
   text-decoration: none;
 }
