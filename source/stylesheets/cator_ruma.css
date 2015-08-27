@@ -248,6 +248,9 @@ carousel-caption > div {
 .bio > h2 {
     display: inline
   }
+portrait {
+    min-width: 20em;
+  }
 
 @media(max-width: 22em) {
   li > a {
