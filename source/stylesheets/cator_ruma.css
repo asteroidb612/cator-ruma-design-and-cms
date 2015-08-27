@@ -276,10 +276,22 @@ carousel-caption {
   text-align: left;
   font-size: 1.2em;
 }  
+
 carousel-caption > div {
   margin-left: 0;
 }
 
+.portrait > img{
+  border: 3px solid white;
+  -webkit-transition: border 200ms ease-out;
+  -moz-transition: border 200ms ease-out;
+  -o-transition: border 200ms ease-out;
+  transition: border 200ms ease-out;
+}
+
+.portrait > img:hover {
+  border: 3px solid rgb(242, 105, 34);  
+}
 @media(max-width: 22em) {
   li > a {
     line-height: 2;
