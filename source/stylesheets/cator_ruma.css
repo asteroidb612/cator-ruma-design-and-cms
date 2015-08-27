@@ -7,8 +7,9 @@
     letter-spacing: 1px;
     font-family: kalinga; 
     font-weight: bold;
-    text-align: center;
-    font-size: 1.4em;
+    text-align: left;
+    margin-left: .5em;
+    border-bottom: 1px solid rgb(200, 200, 200); 
 }
 
 .bar {
@@ -32,6 +33,7 @@ body {
   vertical-align: bottom;
   line-height: 0;
   height: auto;
+  max-width: 200px;
 }
 .header-container {
   left: 0;
@@ -281,6 +283,10 @@ carousel-caption > div {
   .feature-image { 
     padding: 0;
   }
+   
+  .company-name {
+    font-size: 1em;
+  }
 }
 
 @media(min-width: 22em) and (max-width: 30em) {
@@ -310,6 +316,10 @@ carousel-caption > div {
   }
   ul li {
     font-size: 1em;
+  }
+  .company-name {
+    font-size: 1.3em;
+    margin-right: 1em;
   }
 }
 
@@ -365,7 +375,11 @@ carousel-caption > div {
   .apply {
     margin: 2em;
   }
+  .company-name {
+    font-size: 1.5em;
+  }
 }
+
 @media (min-width: 60em){
   .service {
     border-right: 2px solid rgb(242, 105, 34);
@@ -376,4 +390,7 @@ carousel-caption > div {
   .job {
     margin: 0;
   }
+ .company-name {
+     font-size: 2em;
+     margin-right: 2em;
 }
