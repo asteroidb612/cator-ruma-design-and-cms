@@ -106,6 +106,14 @@ hr {
   text-align: center;
   font-size: 1.3em;
   padding-top: .3em;
+  margin-top: -5em;
+  -webkit-transition: all 200ms ease-out;
+  -moz-transition: all 200ms ease-out;
+  -o-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+.job-shortcut:hover {
+  font-size: 1.4em;
 }
 .job-shortcut > a {
   color: white;
@@ -192,7 +200,7 @@ hr {
 }
 
 .apply{
-  border: 2px solid white;
+  border: 1px solid white;
   text-align: center;
   text-decoration: none;
   font-size: 1.5em;
@@ -208,7 +216,7 @@ hr {
 }
 
 .apply:hover {
-  border: 2px solid rgb(242, 105, 34);
+  border: 1px solid rgb(242, 105, 34);
 }
 
 .apply-link,
