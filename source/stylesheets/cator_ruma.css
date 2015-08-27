@@ -246,14 +246,19 @@ hr {
 }
 
 .sector {
-  border : 2px solid white;
-  -webkit-transition: all 200ms ease-out;
-  -moz-transition: all 200ms ease-out;
-  -o-transition: all 200ms ease-out;
-  transition: all 200ms ease-out;
           }
 
-.sector:hover {
+.sector > img {
+  display: block;
+  width: 100%;
+  border : 2px solid white;
+  -webkit-transition: border 200ms ease-out;
+  -moz-transition: border 200ms ease-out;
+  -o-transition: border 200ms ease-out;
+  transition: border 200ms ease-out;
+}
+
+.sector > img:hover {
   border: 2px solid rgb(242, 105, 34);
 }
 
@@ -265,11 +270,6 @@ hr {
 
 .sectors{
   padding-bottom: 1em;
-}
-
-.sector > img {
-  display: block;
-  width: 100%;
 }
 
 carousel-caption {
