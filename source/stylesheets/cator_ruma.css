@@ -275,12 +275,15 @@ hr {
   padding-bottom: 1em;
 }
 
-carousel-caption {
-  text-align: left;
+.carousel-caption {
   font-size: 1.2em;
 }  
 
-carousel-caption > div {
+.project-caption {
+  background-color: rgba(130, 130, 130, .7);
+}
+
+.carousel-caption > div {
   margin-left: 0;
 }
 
@@ -295,7 +298,7 @@ carousel-caption > div {
 .bio > h2 {
   display: inline
 }
-portrait {
+.portrait {
   min-width: 20em;
 }
 
