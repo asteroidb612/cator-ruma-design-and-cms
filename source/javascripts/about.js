@@ -20,12 +20,18 @@ $(document).ready(function() {
             try{
                 var yaml = jsyaml.load(data);
                 
+                //Replace newlines with html breaks
+                yaml["together-main"] = preserve_white(yaml["together-main"]);
+                yaml["together-extra"] = preserve_white(yaml["together-extra"]);
+
                 //Add a class-safe string for modal data targets
                 for (var i=0; i<yaml.principals.length; i++) {
-                    yaml.principals[i].target =  class_safe(yaml.principals[i].name)
+                    yaml.principals[i].target =  class_safe(yaml.principals[i].name);
+                    yaml.principals[i].bio = preserve_white(yaml.principals[i].bio);
                 }
                 for (var i=0; i<yaml.associates.length; i++) {
                     yaml.associates[i].target =  class_safe(yaml.associates[i].name)
+                    yaml.associates[i].bio = preserve_white(yaml.associates[i].bio);
                 }
 
                 $('#media-placeholder').html(media_template(yaml));

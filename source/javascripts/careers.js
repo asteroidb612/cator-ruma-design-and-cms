@@ -14,7 +14,8 @@ $(document).ready(function() {
                 var yaml = jsyaml.load(data);
                 
                 for (var i=0; i < yaml.jobs.length; i++) {
-                    yaml.jobs[i].safetitle = class_safe(yaml.jobs[i].title)
+                    yaml.jobs[i].safetitle = class_safe(yaml.jobs[i].title);
+                    yaml.jobs[i].blurb = preserve_white(yaml.jobs[i].blurb);
                 }
                 $('#feature-placeholder').html(feature_template(yaml));
                 $('#jobs-placeholder').html(jobs_template(yaml));
