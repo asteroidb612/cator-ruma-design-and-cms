@@ -2,6 +2,9 @@ function class_safe(string) {
 //Remove everything but alphanumeric for use in classes
     return string.replace(/\W/g, ''); 
 }
+function preserve_white(string) {
+  return string.replace(/[\r\n]/g, '<br>');
+}
 function resize() {
     var h = $('.header-container').height();
     var total_width = $('.header-container').width();
