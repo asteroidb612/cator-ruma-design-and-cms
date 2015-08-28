@@ -4,6 +4,18 @@ layout: false
 = data.feature.to_yaml
 
 :plain
+  features:
+    - 
+      title: Union Station
+      image: images/union.web.jpg
+      text: The Beloved Denver Station’s transformation into the Crawford Hotel and iconic hot spot has changed the face of LoDo. Winner of the 2014 American Council of Engineering Companies (ACEC) Excellence Award.
+- 4.times.each do |f|
+  :plain
+      -
+        title: #{lorem.name}
+        image: #{lorem.image('1586x768')}
+        text: #{lorem.paragraph}
+:plain
   sectors:
 
 - data.slides.sectors.each do |s|

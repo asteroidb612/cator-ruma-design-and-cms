@@ -311,8 +311,9 @@ portrait {
   border: 3px solid rgb(242, 105, 34);  
 }
 
-.feature-image {
-    color: white;
+.feature-title{
+  color: white;
+  margin: 0;
   }
 
 @media(max-width: 22em) {
@@ -331,10 +332,9 @@ body {
 
 .feature-info-mobile {
   color: white;
-  background: rgba(100, 100, 100, .3);
-  padding: 0 25;
+  background: rgba(100, 100, 100, .7);
 }
-
+    
 .feature-info-desktop > h3 {
   color: white;
 }
@@ -401,11 +401,7 @@ ul li {
   color: white;
 }
 .feature-info-desktop {
-  position: absolute;
-  width: 30%;
   background: rgba(130, 130, 130, .7);
-  padding: 3% 1em 1em 1em ;
-  height: 100%; 
   color: white;
 }
 

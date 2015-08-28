@@ -4,13 +4,34 @@
   %script#feature{:type=>"x-handlebars-template"}
     .row
       .col-xs-12.feature-image
-        .feature-info-desktop.right
-          %h3.feature-title {{feature.title}}
-          %p {{feature.text}}
-        %img.img-responsive{:src => "{{feature.image}}"}/
-      .col-xs-12.feature-info-mobile
-        %h3 {{feature.title}}
-        %p {{feature.text}}
+        .carousel.slide{:id => "feature-carousel-sm","data-ride" => "carousel"}
+          %ol.carousel-indicators
+            :plain
+              {{#each features}}
+            %li{:class=> "###", "data-target"=>"feature-carousel-sm", "data-slide-to"=>"0"}
+            :plain
+              {{/each}}
+          .carousel-inner{:role => "listbox"}
+            :plain
+              {{#each features}}
+            .item{:class => "###"}
+              %img{:src => "{{image}}"}
+              .carousel-caption
+                .feature-info-desktop
+                  %h3.feature-title {{title}}
+                  %p {{text}}
+                .feature-info-mobile
+                  %h3.feature-title {{title}}
+            :plain
+              {{/each}}
+        %a.left.carousel-control{:href => "#feature-carousel-sm", :role=>"button","data-slide" => "prev"} 
+          %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
+          %span.sr-only
+            Previous
+        %a.right.carousel-control{:href => "#feature-carousel-sm", :role=>"button","data-slide" => "next"} 
+          %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
+          %span.sr-only
+            Next
   .row#feature-placeholder
   / Services Grid
   %h1 Services
@@ -76,12 +97,12 @@
               .modal-header
                 %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
               .modal-body
-                .carousel.slide{:id => "{{safename}}-Carousel-sm","data-ride" => "carousel"}
+                .carousel.slide{:id => "{{safename}}-carousel-sm","data-ride" => "carousel"}
                   %ol.carousel-indicators
-                    %li.active{"data-target"=>"{{safename}}-Carousel-sm", "data-slide-to"=>"0"}
-                    %li{"data-target"=>"{{safename}}-Carousel-sm", "data-slide-to"=>"1"}
-                    %li{"data-target"=>"{{safename}}-Carousel-sm", "data-slide-to"=>"2"}
-                    %li{"data-target"=>"{{safename}}-Carousel-sm", "data-slide-to"=>"3"}
+                    %li.active{"data-target"=>"{{safename}}-carousel-sm", "data-slide-to"=>"0"}
+                    %li{"data-target"=>"{{safename}}-carousel-sm", "data-slide-to"=>"1"}
+                    %li{"data-target"=>"{{safename}}-carousel-sm", "data-slide-to"=>"2"}
+                    %li{"data-target"=>"{{safename}}-carousel-sm", "data-slide-to"=>"3"}
                   .carousel-inner{:role => "listbox"}
                     :plain
                       {{#each projects}}
@@ -93,11 +114,11 @@
                         %div {{price}}
                     :plain
                       {{/each}}
-                %a.left.carousel-control{:href => "\#{{safename}}-Carousel-sm", :role=>"button","data-slide" => "prev"} 
+                %a.left.carousel-control{:href => "\#{{safename}}-carousel-sm", :role=>"button","data-slide" => "prev"} 
                   %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
                   %span.sr-only
                     Previous
-                %a.right.carousel-control{:href => "\#{{safename}}-Carousel-sm", :role=>"button","data-slide" => "next"} 
+                %a.right.carousel-control{:href => "\#{{safename}}-carousel-sm", :role=>"button","data-slide" => "next"} 
                   %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
                   %span.sr-only
                     Next
@@ -122,12 +143,12 @@
             .modal-header
               %a.close{:type=>"button", "data-dismiss"=>"modal"} &times;
             .modal-body
-              .carousel.slide{:id => "{{safename}}-Carousel-xs","data-ride" => "carousel"}
+              .carousel.slide{:id => "{{safename}}-carousel-xs","data-ride" => "carousel"}
                 %ol.carousel-indicators
-                  %li.active{"data-target"=>"{{safename}}-Carousel-xs", "data-slide-to"=>"0"}
-                  %li{"data-target"=>"{{safename}}-Carousel-xs", "data-slide-to"=>"1"}
-                  %li{"data-target"=>"{{safename}}-Carousel-xs", "data-slide-to"=>"2"}
-                  %li{"data-target"=>"{{safename}}-Carousel-xs", "data-slide-to"=>"3"}
+                  %li.active{"data-target"=>"{{safename}}-carousel-xs", "data-slide-to"=>"0"}
+                  %li{"data-target"=>"{{safename}}-carousel-xs", "data-slide-to"=>"1"}
+                  %li{"data-target"=>"{{safename}}-carousel-xs", "data-slide-to"=>"2"}
+                  %li{"data-target"=>"{{safename}}-carousel-xs", "data-slide-to"=>"3"}
                 .carousel-inner{:role => "listbox"}
                   :plain
                     {{#each projects}}
@@ -140,11 +161,11 @@
                       %div {{price}}
                   :plain
                     {{/each}}
-              %a.left.carousel-control{:href => "\#{{safename}}-Carousel-xs", :role=>"button","data-slide" => "prev"} 
+              %a.left.carousel-control{:href => "\#{{safename}}-carousel-xs", :role=>"button","data-slide" => "prev"} 
                 %span.glyphicon.glyphicon-chevron-left{"aria-hidden" => "true"}
                 %span.sr-only
                   Previous
-              %a.right.carousel-control{:href => "\#{{safename}}-Carousel-xs", :role=>"button","data-slide" => "next"} 
+              %a.right.carousel-control{:href => "\#{{safename}}-carousel-xs", :role=>"button","data-slide" => "next"} 
                 %span.glyphicon.glyphicon-chevron-right{"aria-hidden" => "true"}
                 %span.sr-only
                   Next
