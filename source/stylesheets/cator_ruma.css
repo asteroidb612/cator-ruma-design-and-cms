@@ -1,20 +1,20 @@
 .associates {
-    vertical-align: middle;
-    font-size: .5em;
+  vertical-align: middle;
+  font-size: .5em;
 }
 
 .company-name {
-    letter-spacing: 1px;
-    font-family: kalinga; 
-    font-weight: bold;
-    text-align: left;
-    margin-left: .5em;
-    border-bottom: 1px solid rgb(200, 200, 200); 
+  letter-spacing: 1px;
+  font-family: kalinga; 
+  font-weight: bold;
+  text-align: left;
+  margin-left: .5em;
+  border-bottom: 1px solid rgb(200, 200, 200); 
 }
 
 .bar {
-    font-family: kalinga;
-    color: rgb(242, 105, 34); 
+  font-family: kalinga;
+  color: rgb(242, 105, 34); 
 }
 
 a:hover {
@@ -68,7 +68,6 @@ nav > ul li {
   text-align: center;
   font-size: .65em;
 }
-
 
 li > a, 
 li > a:hover,
@@ -247,11 +246,11 @@ hr {
 .sector > img {
   display: block;
   width: 100%;
-  }
+}
 
-  carousel-caption {
-    text-align: left;
-    font-size: 1.2em;
+carousel-caption {
+  text-align: left;
+  font-size: 1.2em;
 }  
 carousel-caption > div {
   margin-left: 0;
@@ -260,137 +259,143 @@ carousel-caption > div {
 @media(max-width: 22em) {
   li > a {
     line-height: 2;
-  }
-  address {
-    font-size: .7em;
-  }
-  body {
-    padding-top: 26px;
-  }
-  .header-container {
-    margin: -26px 0 0 0;
-  }
+}
+address {
+  font-size: .7em;
+}
+body {
+  padding-top: 26px;
+}
+.header-container {
+  margin: -26px 0 0 0;
+}
 
-  .feature-info-mobile {
-    background: rgba(100, 100, 100, .3);
-    padding: 0 25;
-  }
+.feature-info-mobile {
+  background: rgba(100, 100, 100, .3);
+  padding: 0 25;
+}
 
-  .feature-info-desktop {
-    display: none;
-  }
+.feature-info-desktop {
+  display: none;
+}
 
-  .feature-image { 
-    padding: 0;
-  }
-   
-  .company-name {
-    font-size: 1em;
-  }
+.feature-image { 
+  padding: 0;
+}
+
+.company-name {
+  font-size: 1em;
+}
 }
 
 @media(min-width: 22em) and (max-width: 30em) {
   .feature-info-mobile {
     background: rgba(100, 100, 100, .3);
     padding: 0 25px;
-  }
+}
 
-  .feature-info-desktop {
-    display: none;
-  }
+.feature-info-desktop {
+  display: none;
+}
 
-  .feature-image { 
-    padding: 0;
-  }
-  li > a {
-    line-height: 3;
-  }
-  .header-container {
-    margin: -30px 0 0 0; // Adjust
-  }
-  body {
-    padding-top: 30px;
-  }
-  .states {
-    font-size: 1.2em;
-  }
-  ul li {
-    font-size: 1em;
-  }
-  .company-name {
-    font-size: 1.3em;
-    margin-right: 1em;
-  }
+.feature-image { 
+  padding: 0;
+}
+li > a {
+  line-height: 3;
+}
+.header-container {
+  margin: -44px 0 0 0; // Adjust
+}
+body {
+  padding-top: 44px;
+}
+.states {
+  font-size: 1.2em;
+}
+ul li {
+  font-size: 1em;
+}
+.company-name {
+  font-size: 1.3em;
+  margin-right: 1em;
+}
 }
 
 @media(min-width: 30em)  {
   .feature-info-mobile {
     display: none;
-  }
+}
 
-  .feature-info-desktop {
-    position: absolute;
-    width: 30%;
-    background: rgba(130, 130, 130, .7);
-    padding: 3% 1em 1em 1em ;
-    height: 100%; 
-    color: white;
-  }
+.feature-info-desktop {
+  position: absolute;
+  width: 30%;
+  background: rgba(130, 130, 130, .7);
+  padding: 3% 1em 1em 1em ;
+  height: 100%; 
+  color: white;
+}
 
-  .right{
-    right: 0;
-  }
+.right{
+  right: 0;
+}
 
-  .feature-image { 
-    position: relative;
-    left: 1px;
-    padding: 0;
-  }
+.feature-image { 
+  position: relative;
+  left: 1px;
+  padding: 0;
+}
 
-  li > a {
-    line-height: 4;
-    font-size: 1.5
-  }
-  nav > ul {
-    font-size: 1.4em;
-  }
-  .header-container {
-    margin: -56px 0 0 0; // Adjust
-  }
-  body {
-    padding-top: 56px;
-  }
-  .states {
-    font-size: 1.2em;
-  }
-  .service {
-    font-size: 1.2em;
-  }
-  .perk-col {
-    font-size: 1.2em;
-  }
-  .portrait {
-    padding: 2em;
-  }
-  .apply {
-    margin: 2em;
-  }
-  .company-name {
-    font-size: 1.5em;
-  }
+li > a {
+  line-height: 4;
+  font-size: 1.5
+}
+nav > ul {
+  font-size: 1.4em;
+}
+.header-container {
+  margin: -87px 0 0 0; // Adjust
+}
+body {
+  padding-top: 87px;
+}
+.states {
+  font-size: 1.2em;
+}
+.service {
+  font-size: 1.2em;
+}
+.perk-col {
+  font-size: 1.2em;
+}
+.portrait {
+  padding: 2em;
+}
+.apply {
+  margin: 2em;
+}
+.company-name {
+  font-size: 1.5em;
+}
 }
 
 @media (min-width: 60em){
   .service {
     border-right: 2px solid rgb(242, 105, 34);
-  }
-  .apply {
-    margin: .2em 0 0 0;
-  }
-  .job {
-    margin: 0;
-  }
- .company-name {
-     font-size: 2em;
-     margin-right: 2em;
+}
+.apply {
+  margin: .2em 0 0 0;
+}
+.job {
+  margin: 0;
+}
+.company-name {
+  font-size: 2em;
+  margin-right: 2em;
+  body {
+    padding-top: 97px;
+}
+.header-container {
+  margin: -97px 0 0 0; // Adjust
+}
 }
