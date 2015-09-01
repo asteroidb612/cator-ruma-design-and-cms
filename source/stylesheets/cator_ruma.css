@@ -299,7 +299,7 @@ hr {
 }
 
 .carousel-caption {
-  text-align: left;
+  padding: .5em .5em 1.5em .5em;
   font-size: 1.2em;
 }  
 
