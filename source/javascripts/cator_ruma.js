@@ -4,7 +4,7 @@ function class_safe(string) {
 }
 function resize() {
     var h = $('.header-container').height();
-    var total_width = $('.header-container').width();
+    var total_width = $(window).width();
     var factor = $('body').width() > 800 ? 2 : 1.5;
     var max = factor*h;
     var min = h;
