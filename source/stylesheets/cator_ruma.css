@@ -1,6 +1,24 @@
 a {
   color: rgb(111, 98, 95);
 }
+.associates {
+  vertical-align: middle;
+  font-size: .5em;
+}
+
+.company-name {
+  letter-spacing: 1px;
+  font-family: kalinga; 
+  font-weight: bold;
+  text-align: left;
+  margin-left: .5em;
+}
+
+.bar {
+  font-family: kalinga;
+  color: rgb(242, 105, 34); 
+}
+
 a:hover {
   color: rgb(51, 51, 51);
 }
@@ -21,6 +39,7 @@ body {
   vertical-align: bottom;
   line-height: 0;
   height: auto;
+  max-width: 200px;
 }
 .header-container {
   left: 0;
@@ -33,7 +52,7 @@ body {
 }
 
 header {
-  display: inline-block;
+    display: inline-block;
   width: 79%;
   margin-left: 21%; 
   padding-top: .4em;
@@ -55,7 +74,6 @@ nav > ul li {
   text-align: center;
   font-size: .65em;
 }
-
 
 li > a, 
 li > a:hover,
@@ -275,7 +293,13 @@ hr {
   padding-bottom: 1em;
 }
 
+.sector > img {
+  display: block;
+  width: 100%;
+}
+
 .carousel-caption {
+  text-align: left;
   font-size: 1.2em;
 }  
 
@@ -334,6 +358,7 @@ body {
 }
 
 .feature-info-mobile {
+  padding: 0 25;
   color: white;
   background: rgba(100, 100, 100, .7);
 }
@@ -377,10 +402,10 @@ li > a {
   line-height: 3;
 }
 .header-container {
-  margin: -30px 0 0 0; // Adjust
+  margin: -44px 0 0 0; // Adjust
 }
 body {
-  padding-top: 30px;
+  padding-top: 44px;
 }
 .states {
   font-size: 1.2em;
@@ -393,12 +418,17 @@ ul li {
   font-size: 1.3em;
   margin-top: 0;
 }
+.company-name {
+  font-size: 1.3em;
+  margin-right: 1em;
+}
 }
 
 @media(min-width: 30em)  {
   .feature-info-mobile {
     display: none;
 }
+<<<<<<< HEAD
 
 .feature-info-desktop > h3{
   color: white;
@@ -413,7 +443,6 @@ ul li {
 }
 
 .feature-image { 
-  color: white;
   position: relative;
   left: 1px;
   padding: 0;
@@ -425,15 +454,6 @@ li > a {
 }
 nav > ul {
   font-size: 1.4em;
-}
-.header-container {
-  margin: -56px 0 0 0; // Adjust
-}
-body {
-  padding-top: 56px;
-}
-.states {
-  font-size: 1.2em;
 }
 .service {
   font-size: 1.2em;
@@ -451,7 +471,34 @@ body {
   font-size: 1.4;
   margin-top: -5em;
 }
+
+.header-container {
+  margin: -87px 0 0 0; // Adjust
 }
+body {
+  padding-top: 87px;
+}
+.states {
+  font-size: 1.2em;
+}
+.service {
+  font-size: 1.2em;
+}
+.perk-col {
+  font-size: 1.2em;
+}
+.portrait {
+  padding: 2em;
+}
+.apply {
+  margin: 2em;
+}
+.company-name {
+  font-size: 1.5em;
+  border-bottom: 1px solid rgb(200, 200, 200); 
+}
+}
+
 @media (min-width: 60em){
   .service {
     border-right: 2px solid rgb(242, 105, 34);
@@ -465,5 +512,16 @@ body {
 .job-shortcut {
   margin-top: -5em;
   font-size: 1.4;
+}
+.company-name {
+  font-size: 2em;
+  margin-right: 2em;
+  border-bottom: 1px solid rgb(200, 200, 200); 
+}
+  body {
+    padding-top: 97px;
+}
+.header-container {
+  margin: -97px 0 0 0; // Adjust
 }
 }

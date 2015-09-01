@@ -7,8 +7,9 @@ function preserve_white(string) {
 }
 function resize() {
     var h = $('.header-container').height();
-    var total_width = $('.header-container').width();
-    var max = 2.5*h;
+    var total_width = $(window).width();
+    var factor = $('body').width() > 800 ? 2 : 1.5;
+    var max = factor*h;
     var min = h;
 
     //Logo should start twice the height of the top bar, and shrink to that height
@@ -17,14 +18,13 @@ function resize() {
     $("#logo").width(width);
 
     $("header").css({
-        'margin-left': width + 5,
+        'margin-left': width +2,
         'width': total_width - width,
     });
 }
 
 document.addEventListener("touchmove", resize, false);
 document.addEventListener("scroll", resize, false);
-window.addEventListener("resize", resize, false);
 
 $(document).ready(function () {
     resize();
